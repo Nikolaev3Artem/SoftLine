@@ -1,3 +1,16 @@
-body {
-    background: blue;
+
+
+.header__sticky_menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.sticky_menu__left_side{
+    display: flex;
+    flex-direction: row;
+}
+
+.sticky_menu__right_side{
+    display: flex;
+    flex-direction: row;
 }
