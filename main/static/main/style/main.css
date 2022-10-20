@@ -1,16 +1,102 @@
+/* Header Start */
 
 
+/* Header Menu Start */
 .header__sticky_menu{
     display: flex;
     flex-direction: row;
 }
 
+
+/* Header Menu Left Side */
+
 .sticky_menu__left_side{
     display: flex;
     flex-direction: row;
 }
+.left_side__logo{
 
+}
+
+.left_side__contacts{
+
+}
+
+.left_side__phone_icon{
+
+}
+
+.left_side__phone_number{
+
+}
+
+.left_side__telegram_icon{
+
+}
+
+
+/* Header Menu Right Side */
 .sticky_menu__right_side{
     display: flex;
     flex-direction: row;
 }
+
+.sticky_menu__change_language{
+
+}
+
+.sticky_menu__make_request{
+
+}
+
+.sticky_menu__dropdown{
+
+}
+
+/* DropDown Menu Start */
+.sticky_menu__dropdown{
+
+}
+
+.sticky_menu__nav{
+
+}
+
+.nav__about_us{
+
+}
+
+.nav__profile{
+
+}
+
+.nav__signin{
+
+}
+
+
+/* DropDown Menu End */
+
+/* Header Menu End */
+
+/* Header End */
+
+
+
+/* Main Content Start */
+
+.main_content{
+
+}
+
+/* Main Content End */
+
+
+
+/* Footer Start */
+
+.footer{
+    
+}
+
+/* Footer End */
