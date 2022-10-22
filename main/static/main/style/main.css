@@ -236,7 +236,8 @@ body{
 
 
 .numbers_courses{
-    font-size: 70px;
+    font-size: 80px;
+    font-weight: 900;
 }
 
 .best_courses{
@@ -248,14 +249,19 @@ body{
     display: flex;
     justify-content: center;
     font-size: 40px;
+    text-transform: uppercase;
 }
 
 .courses_wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 10px;
     
+}
+
+.best_courses_desc{
+    display: flex;
 }
 
 
@@ -336,7 +342,8 @@ body{
 .consultation__header{
     color: #2a2a2a;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 .consultation__desc{
