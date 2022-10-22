@@ -27,7 +27,15 @@
             </div>
             <div class="sticky_menu__right_side">
                 <p class="sticky_menu__change_language">UA</p>
-                <button class="sticky_menu__make_request">Залишити заявку</button>
+                <button class="sticky_menu__make_request" onclick="show_popap('modal-1')">Залишити заявку</button>
+                <div class="overlay" id="modal-1">
+                    <div class="flex-popap">
+                        <div class="popap">
+                            <span class="close_popap">Закрыть</span>
+                            <p>123</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="sticky_menu__dropdown">
                     <a href="#">Меню</a>
                     <div class="sticky_menu__nav">
@@ -49,7 +57,7 @@
 
 
     <div class="header__slider">
-            <img class='header__slider slider-item' src="{% static 'main/img/slider.jpg' %}" alt="" srcset="">
+            <img class='header__slider slider-item' src="{% static 'main/img/slider1.jpg' %}" alt="" srcset="">
         
         <p class="img_desc" >Університет <br> <span class="color2ec">освіти</span> та <span class="color2ec">комп'ютерних технологій</span></p>
     </div>
@@ -73,9 +81,5 @@
             </div>
         </div>
     </div>
-</div>
-
-<div class="footer">
-
 </div>
 {% endblock %}

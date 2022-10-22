@@ -143,15 +143,6 @@ body{
     font-weight: 600;
     text-transform: uppercase;
 }
-.sticky_menu_header{
-    visibility: hidden;
-    width: 35%;
-    height: 7vh;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #FFF;
-}
 
 .header_make_request{
     text-align: center;
@@ -204,8 +195,49 @@ body{
 
 }
 
+.overlay 
+{
+    position: fixed;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6); /* затемнение фона */
+    display: none;
+}
+  .overlay.active {
+    display: block;
+}
+  .overlay .flex-popap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .overlay .flex-popap .popap {
+    position: relative;
+    background-color: #fff;  /* цвет фона всплывающего блока */
+    padding: 35px 25px;
+    margin: 0 10px;
+    width: 750px;
+    height: 470px;
+    overflow: auto;
+}
+  .popap span {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+
 .best_courses{
-    margin-top: 200px;
+    margin-top: 170px;
     position: relative;
 }
 
