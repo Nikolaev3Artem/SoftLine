@@ -330,26 +330,31 @@ body{
 
 .sp_courses__header{
     margin-top: 45px;
+    margin-bottom: 25px;
     display: flex;
     justify-content: center;
     font-size: 40px;
     text-transform: uppercase;
+    
 }
 
 .courses_blocks{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .courses__left_side{
     display: flex;
-
+    position: relative;
 }
 
 .courses__right_side{
     display: flex;
+    position: relative;
 }
+
 
 .course_bg_img{
     display: flex;
@@ -357,15 +362,85 @@ body{
     max-width: 421px;
     max-height: 285px;
     margin: 20px;
-    box-shadow: rgb(42 42 42 / 10%) 0 5px 15px 5px;
+    box-shadow: rgb(42 42 42 / 70%) 0 5px 15px 5px;
 }   
 
-.courses_blocks__desc{
+
+.course_block__white_bg{
+}
+
+.courses_blocks__desc_left_top{
     display: flex;
     position: absolute;
     flex-direction: column;
     z-index: 20;
+    right: 55%;
+    top: 30%;
+    align-items: center;
 }
+
+.courses_blocks__desc_left_bottom{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 20;
+    right: 55%;
+    top: 130%;
+    align-items: center;
+}
+
+.courses_blocks__desc_right_top{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 20;
+    right: 5%;
+    top: -70%;
+    align-items: center;
+}
+
+.courses_blocks__desc_right_bottom{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 20;
+    right: 5%;
+    top: 30%;
+    align-items: center;
+}
+
+.course__header{
+    color: #2a2a2a;
+    font-size: 18px;
+    font-family: 'ProximaBold';
+    font-weight:600;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.course_start{
+    display: flex;
+    color: #2a2a2a;
+    font-size: 14px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses_blocks_btn{
+    display: flex;
+    color: #009EDF;
+    border-color: #009EDF;
+    padding: 10px 24px;
+    font-size: 14px;
+    width: 138px;
+    height: 41px;
+    font-family:'ProximaCondencedLight';
+    margin-top: 10px;
+}
+
+
 
 .course__consultation{
     display: flex;
@@ -375,7 +450,7 @@ body{
     margin: 60px auto 0 auto;
     height: 635px;
     background-color: #FFFF;
-    box-shadow: rgb(42 42 42 / 10%) 0 5px 15px 5px;
+    box-shadow: rgb(42 42 42 / 40%) 0 5px 15px 5px;
     padding: 40px;
 
 }
