@@ -33,9 +33,32 @@
                         <div class="popap">
                             <span class="close_popap">Закрыть</span>
                             <p class="popap-title">Записатися на курс</p>
-                            <form action="." method="POST" class="popap-form">{% csrf_token %}
-                                {{form.as_p}}
-                                <button type="submit">Оформить заявку</button>
+                            <form action="." method="POST">{% csrf_token %}
+                                <div class="popap-form">
+                                    <div class="popap_left_side">
+                                        {{form.first_name.label_tag}}
+                                        <br>
+                                        {{form.first_name}}
+                                        <br>
+                                        {{form.last_name.label_tag}}
+                                        <br>
+                                        {{form.last_name}}
+                                        <br>
+                                        {{form.email.label_tag}}
+                                        <br>
+                                        {{form.email}}
+                                    </div>
+                                    <div class="popap_right_side">
+                                        {{form.course.label_tag}}
+                                        <br>
+                                        {{form.course}}
+                                        <br>
+                                        {{form.comment.label_tag}}
+                                        <br>
+                                        {{form.comment}}
+                                    </div>
+                                </div>
+                                <button class="submit_request_button" type="submit">Оформить заявку</button>
                             </form>
                         </div>
                     </div>
