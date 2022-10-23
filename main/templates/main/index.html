@@ -33,7 +33,8 @@
                         <div class="popap">
                             <span class="close_popap">Закрыть</span>
                             <p class="popap-title">Записатися на курс</p>
-                            <form action="." method="POST" class="popap-form">{% csrf_token %}
+                            <form action="." method="POST" class="popap-form">
+                                {% csrf_token %}
                                 {{form.as_p}}
                                 <button type="submit">Оформить заявку</button>
                             </form>
@@ -78,29 +79,34 @@
                     <span class="color2ec numbers_courses">01 </span>
                     <p class="font30">Зручний графік занять</p>
                 </div>
+                <p class="best_desc">400+ відео відгуків від працевлаштованих та задоволених студентів. Найбільша кількість в Україні як підтвердження якості.</p>
                 <div class="best_courses_desc">
                     <span class="color2ec numbers_courses">02 </span>
                     <p class="font30">Гарантія працевлаштування</p>
                 </div>
+                <p class="best_desc">Єдина в Україні компанія з відео відгуками від роботодавців та реальними партнерами.</p>
                 <div class="best_courses_desc">
                     <span class="color2ec numbers_courses">03 </span>
                     <p class="font30">Освіта для дітей 9-15 років</p>
                 </div>
+                <p class="best_desc">Єдині в Україні, хто має спільну інтернатуру з ІТ-компаніями з top-списку DOU. Конкурентам про таке тільки мріяти.</p>
             </div>
             <div class="best_courses__right_side">
                 <div class="best_courses_desc">
                     <span class="color2ec numbers_courses">04 </span>
                     <p class="font30">Стажування в IT</p>
                 </div>
+                <p class="best_desc">Гарантуємо 100% працевлаштування після будь-якого комплексного курсу з інкубатором. Фіксуємо гарантію в договорі.</p>
                 <div class="best_courses_desc">
                     <span class="color2ec numbers_courses">05 </span>
                     <p class="font30">IT інкубатор</p>
                 </div>
+                <p class="best_desc">Пройдіть курс наново, якщо щось пропустили або не зрозуміли. Це безкоштовно для всіх випускників наших курсів.</p>
                 <div class="best_courses_desc">
                     <span class="color2ec numbers_courses">06 </span>
                     <p class="font30">Освіта для дорослих</p>
-                    <p class="best_desc"></p>
                 </div>  
+                <p class="best_desc">Не треба кидати роботу заради курсів програмування. Поєднюйте їх з основною роботою як це зробили сотні наших студентів.</p>
             </div>
         </div>
     </div>

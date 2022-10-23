@@ -307,20 +307,19 @@ body{
     display: flex;
 }
 
-
-
-.best_courses__left_side{
-
-}
-
-.best_courses__left_side p , .best_courses__right_side p{
+.best_courses__left_side , .best_courses__right_side{
     padding: 25px;
 }
 
-.best_courses__right_side{
-
+.best_courses__left_side p, .best_courses__right_side p{
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
+.best_desc{
+    color: #2a2a2a;
+    font-size: 23px;
+}
 
 
 .specialty_courses{
@@ -363,10 +362,9 @@ body{
 
 .courses_blocks__desc{
     display: flex;
-    flex-direction: column;
     position: absolute;
-    z-index: 2;
-    align-items: center;
+    flex-direction: column;
+    z-index: 20;
 }
 
 .course__consultation{
