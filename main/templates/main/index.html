@@ -32,7 +32,11 @@
                     <div class="flex-popap">
                         <div class="popap">
                             <span class="close_popap">Закрыть</span>
-                            <p>123</p>
+                            <p class="popap-title">Записатися на курс</p>
+                            <form action="." method="POST" class="popap-form">{% csrf_token %}
+                                {{form.as_p}}
+                                <button type="submit">Оформить заявку</button>
+                            </form>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import AbstractBaseUser
-
+from phonenumber_field.modelfields import PhoneNumberField
 
 class Course(models.Model):
     title = models.CharField("Заголовок курса", max_length=200)
@@ -18,14 +17,13 @@ class Course(models.Model):
     def __str__(self):
         return self.title
 
-class Student(AbstractBaseUser):
+class Request(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
+    phone = PhoneNumberField(region="UA")
     email = models.EmailField(unique=True, max_length=150)
-    password = models.CharField(max_length=20)
-    Avatar = models.ImageField()
-    age = models.IntegerField()
-    courses = models.ManyToManyField(Course, related_name="students")
+    course = models.ForeignKey(Course, related_name="requests", on_delete=models.CASCADE)
+    comment = models.CharField(max_length=250, blank=True, null=True)
 
-    USERNAME_FIELD = "email"
+
 
