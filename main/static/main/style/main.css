@@ -250,13 +250,16 @@ body{
     align-items: center;
 }
 .popap_left_side input{
-    width: 250px;
+    width: 300px;
 }
 .popap_left_side label{
     padding-top: 10px;
 }
 .popap_right_side {
     align-items: center;
+}
+.popap_right_side label{
+    padding-top: 10px;
 }
 .submit_request_button{
     width: 160px;

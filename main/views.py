@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+#from .send_message import send_message
 
-from .models import Course
+from .models import Course, Request
 from .forms import RequestForm
 
 def index(request):
@@ -14,6 +15,8 @@ def index(request):
         form = RequestForm(request.POST)
         if form.is_valid():
             form.save()
+            #send_message()
+            
 
     context = {"form": form,
                "course_left_top": course_left_top,
