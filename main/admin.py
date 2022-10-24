@@ -7,6 +7,7 @@ class CourseRequestsInline(admin.StackedInline):
 
 @admin.register(Course)
 class CourseAdmin(admin.ModelAdmin):
+    readonly_fields = ['id',]
     inlines = [
         CourseRequestsInline
     ]

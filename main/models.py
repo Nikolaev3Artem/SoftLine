@@ -11,8 +11,8 @@ class Course(models.Model):
     hours = models.IntegerField("Сколько часов курс займёт")
     lections = models.IntegerField("Количество лекций в курсе")
     skill = models.CharField("Необходимый уровень знаний", max_length=50)
-    when_start = models.DateTimeField("Начало курса")
-    when_end = models.DateTimeField("Конец курса")
+    when_start = models.CharField("Начало курса", max_length=50)
+    when_end = models.CharField("Конец курса", max_length=50)
 
     def __str__(self):
         return self.title
