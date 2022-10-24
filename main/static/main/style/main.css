@@ -439,10 +439,9 @@ body{
 .course__consultation{
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 43%;
     margin: 60px auto 0 auto;
-    height: 635px;
+    height: 625px;
     background-color: #FFFF;
     box-shadow: rgb(42 42 42 / 40%) 0 5px 15px 5px;
     padding: 40px;
@@ -456,8 +455,78 @@ body{
     text-transform: uppercase;
 }
 
-.consultation__desc{
+.consultation_header__desc{
     margin: 16px;
+}
+
+.cons__feedback{
+    display: flex;
+    flex-direction: column;
+}
+
+.cons__name{
+    display: flex;
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: ProximaCondencedLight;
+}
+
+.cons__surname{
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: ProximaCondencedLight;
+}
+
+.cons__phone{
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: ProximaCondencedLight;
+}
+
+.cons__email{
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: ProximaCondencedLight;
+}
+
+.cons__input{
+    margin-top: 15px;
+    background-color: #fff;
+    margin: 5px;
+    padding:10px 7px;
+    width: 320px;
+    height: 39px;
+}
+
+.cons__mesengers{
+    padding-top:10px;
+}
+
+.cons__mesenger_icons{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0px;
+}
+
+.cons__phone_icon{
+    margin-right: 10px;
+}
+
+.cons__mesenger_phone_number{
+    margin-right: 10px;
+}
+
+.cons__telegram_icon{
+
+}
+
+.cons__btn{
+    color: #fff;
+    font-size: 16px;
+    font-family: Arial;
+    background-color: #009EDF;
+    margin: 35px;
+    padding: 12px 55px;
 }
 
 /* Main Content End */
