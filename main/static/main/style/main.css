@@ -530,15 +530,117 @@ body{
 
 
 .all_courses{
-    background-color: black;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .all_courses__button{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    background-color: #2EC4B6;
+    font-family: sans-serif;
+    padding: 20px;
+    border-radius: 50px;
+    width: 227px;
+    height: 50px;
 }
 
 .all_courses__header{
+    margin-top: 52px;
+    font-size: 30px;
+}
 
+.all_courses__button:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.all_courses_stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #353866;
+    width: 100%;
+    height: 240px;
+    padding: 60px 0px;
+    margin-top: 40px;
+}
+
+.all_courses_stats_persentage {
+
+}
+
+.persentage{
+    color: #FFF;
+    font-size: 50px;
+    font-family: Poppins;
+}
+
+.persentage_desc{
+    color: #AEAEAE;
+    font-size: 16px;
+    font-family: Poppins;
+}
+
+.all_courses_stats_working{
+
+}
+
+.working__number{
+    align-items: center;
+    color: #FFF;
+    font-size: 50px;
+    font-family: Poppins;
+}
+
+.working__desc{
+    align-items: center;
+    color: #AEAEAE;
+    font-size: 16px;
+    font-family: Poppins;
+}
+
+.all_courses_stats_entry{
+
+}
+
+.entry__number{
+    align-items: center;
+    color: #FFF;
+    font-size: 50px;
+    font-family: Poppins;
+}
+
+.entry__desc{
+    align-items: center;
+    color: #AEAEAE;
+    font-size: 16px;
+    font-family: Poppins;
+}
+
+.years_exp{
+    align-items: center;
+    color: #FFF;
+    font-size: 50px;
+    font-family: Poppins;
+}
+
+.exp__number{
+
+}
+
+.years__desc{
+    align-items: center;
+    color: #AEAEAE;
+    font-size: 16px;
+    font-family: Poppins;
 }
 
 /* Main Content End */
