@@ -512,10 +512,6 @@ body{
     margin-right: 10px;
 }
 
-.cons__mesenger_phone_number{
-    margin-right: 10px;
-}
-
 .cons__telegram_icon{
 
 }
@@ -527,6 +523,19 @@ body{
     background-color: #009EDF;
     margin: 35px;
     padding: 12px 55px;
+}
+
+
+.all_courses{
+    background-color: black;
+}
+
+.all_courses__button{
+
+}
+
+.all_courses__header{
+
 }
 
 /* Main Content End */
