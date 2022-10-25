@@ -22,7 +22,7 @@ class Request(models.Model):
     last_name = models.CharField(max_length=50)
     phone = PhoneNumberField(region="UA")
     email = models.EmailField(unique=True, max_length=150)
-    course = models.ForeignKey(Course, related_name="requests", on_delete=models.CASCADE)
+    course = models.ForeignKey(Course, related_name="requests", on_delete=models.CASCADE, blank=True, null=True)
     comment = models.CharField(max_length=250, blank=True, null=True)
 
 
