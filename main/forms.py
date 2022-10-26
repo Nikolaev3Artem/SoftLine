@@ -15,7 +15,7 @@ class RequestForm(forms.ModelForm):
             'comment': 'Коментар',
         }
         widgets = {
-            'first_name': forms.TextInput(attrs={'class': 'cons__input', 'placeholder': "Ім'я"}),
+            'first_name': forms.TextInput(attrs={'class': 'cons__input', 'placeholder': "Ім'я",}),
             'last_name': forms.TextInput(attrs={'class': 'cons__input', 'placeholder': 'Прізвище'}),
             'phone': forms.TextInput(attrs={'class': 'cons__input', 'placeholder':'Телефон'}),
             'email': forms.EmailInput(attrs={'class': 'cons__input', 'placeholder':'example@gmail.com'}),

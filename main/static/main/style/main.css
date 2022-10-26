@@ -249,21 +249,55 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
-.popap_left_side {
-    align-items: center;
+
+
+.popap_left_side{
+    display: flex;
+    flex-direction: column;
 }
-.popap_left_side input{
-    width: 300px;
+
+.popap_right_side{
+    display: flex;
+    flex-direction: column;
 }
-.popap_left_side label{
-    padding-top: 10px;
+
+.popap_name_surname{
+    display: flex;
+    flex-direction: row;
 }
-.popap_right_side {
-    align-items: center;
+
+.popap_name{
+    margin: 5px 0px 0px;
 }
-.popap_right_side label{
-    padding-top: 10px;
+
+.first_name_input{
+    width: 147px;
+    height: 33px;
 }
+
+.popap_surname{
+    margin: 5px 0px 0px;
+}
+
+.popap_surname form.first_name{
+    width: 147px;
+    height: 33px;
+}
+
+.popap_phone{
+
+}
+
+.popap_messengers{
+
+}
+
+.popap_email{
+
+}
+
+
+
 .submit_request_button{
     width: 160px;
     height: 50px;
@@ -275,6 +309,11 @@ body{
     margin-top: 10px;
     margin-left: 250px;
   }
+
+
+
+
+
 
 /* Popup End */
 
@@ -661,12 +700,25 @@ body{
 .online{
     display: flex;
     flex-direction: column;
+    width: 33%;
+    height: 100%;;
+    border: 2px solid #EDF4FB;
 }
 
 .online__header{
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
+    width: 165px;
+    background: #FFFFFF;
+    border: 1px solid #9DC6EA;
+    box-sizing: border-box;
+    border-radius: 6px;
+    text-align: center;
+    padding: 10px;
+    top: -30px;
+    left: 50%;
+    margin-left: 30%;
 }
 
 .online__small_desc{
@@ -676,8 +728,9 @@ body{
 .stacionar{
     display: flex;
     flex-direction: column;
-    border-color: #2a2a2a;
-    border-width: 10px;
+    width: 33%;
+    height: 100%;;
+    border: 1px solid #EDF4FB;
     
 }
 
@@ -685,6 +738,16 @@ body{
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
+    width: 165px;
+    background: #FFFFFF;
+    border: 1px solid #9DC6EA;
+    box-sizing: border-box;
+    border-radius: 6px;
+    text-align: center;
+    padding: 10px;
+    top: -23px;
+    left: 70%;
+    margin-left: 30%;
 }
 
 .stacionar__small_desc{
