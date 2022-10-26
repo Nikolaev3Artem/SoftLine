@@ -74,3 +74,6 @@ def index(request):
 
 def about(request):
     return render(request, 'main/about.html')
+
+def error(request):
+    return render(request,'main/error.html')
