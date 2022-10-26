@@ -22,7 +22,7 @@ def send_message_to_request(request):
                                                             f"E-mail: {request.email}\n"
                                                             f"Курс: {request.course}\n"
                                                             f"Комментарий: {request.comment}\n"))
-    print('message sent')
+    return
 
 def index(request):
     try:
