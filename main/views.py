@@ -25,10 +25,22 @@ def send_message_to_request(request):
     print('message sent')
 
 def index(request):
-    course_left_top = Course.objects.all().first()
-    course_left_bottom = Course.objects.all().last()
-    course_right_top = Course.objects.all().last()
-    course_right_bottom = Course.objects.all().first()
+    try:
+        course_left_top = Course.objects.get(id=1)
+    except Course.DoesNotExist:
+        course_left_top = None
+    try:
+        course_right_top = Course.objects.get(id=2)
+    except Course.DoesNotExist:
+        course_right_top = None
+    try:
+        course_left_bottom = Course.objects.get(id=3)
+    except Course.DoesNotExist:
+        course_left_bottom = None
+    try:        
+        course_right_bottom = Course.objects.get(id=4)
+    except Course.DoesNotExist:
+        course_right_bottom = None
     form = RequestForm()
     if request.method == 'POST':
         form = RequestForm(request.POST)
