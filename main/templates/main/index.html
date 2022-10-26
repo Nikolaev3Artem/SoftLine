@@ -37,34 +37,34 @@
                                 {% csrf_token %}
                                 <div class="popap-form">
                                     <div class="popap_left_side">
-                                        {{form.errors}}
-                                        {{form.first_name.label_tag}}
+                                        {{request_form.errors}}
+                                        {{request_form.first_name.label_tag}}
                                         <br>
-                                        {{form.first_name}}
+                                        {{request_form.first_name}}
                                         <br>
-                                        {{form.last_name.label_tag}}
+                                        {{request_form.last_name.label_tag}}
                                         <br>
-                                        {{form.last_name}}
+                                        {{request_form.last_name}}
                                         <br>
-                                        {{form.email.label_tag}}
+                                        {{request_form.email.label_tag}}
                                         <br>
-                                        {{form.email}}
+                                        {{request_form.email}}
                                     </div>
                                     <div class="popap_right_side">
-                                        {{form.phone.label_tag}}
+                                        {{request_form.phone.label_tag}}
                                         <br>
-                                        {{form.phone}}
+                                        {{request_form.phone}}
                                         <br>
-                                        {{form.course.label_tag}}
+                                        {{request_form.course.label_tag}}
                                         <br>
-                                        {{form.course}}
+                                        {{request_form.course}}
                                         <br>
-                                        {{form.comment.label_tag}}
+                                        {{request_form.comment.label_tag}}
                                         <br>
-                                        {{form.comment}}
+                                        {{request_form.comment}}
                                     </div>
                                 </div>
-                                <button class="submit_request_button" type="submit">Оформить заявку</button>
+                                <button class="submit_request_button" name="request_submit" type="submit">Оформить заявку</button>
                             </form>
                         </div>
                     </div>
@@ -199,13 +199,13 @@
                     <p class="consultation_header__desc">Залиште свій номер телефону і ми зв'яжемося з Вами найближчим часом</p>
                     <div class="cons__feedback">
                         <span class="cons__name">Ім'я:*</span>
-                        {{form.first_name}}
+                        {{cons_form.first_name}}
                         <span class="cons__surname">Прізвище:*</span>
-                        {{form.last_name}}
+                        {{cons_form.last_name}}
                         <span class="cons__phone">Телефон:*</span>
-                        {{form.phone}}
+                        {{cons_form.phone}}
                         <span class="cons__email">Email:*</span>
-                        {{form.email}}
+                        {{cons_form.email}}
                         <p class="cons__mesengers">Мессенджер:</p>
                         <div class="cons__mesenger_icons">
                             <a href='#' class="cons__phone_icon">
@@ -222,7 +222,7 @@
                         </div>
 
 
-                        <button class="cons__btn" type='submit'>Замовити</button>
+                        <button class="cons__btn" name='cons_submit' type='submit'>Замовити</button>
 
                 </div>
             </form>
