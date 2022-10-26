@@ -2,6 +2,7 @@ a{
     text-decoration: none;
     color: black;
     box-sizing: border-box;
+
 }
 
 body{
@@ -9,6 +10,7 @@ body{
     height: 100%;
     padding: 0px;
     margin: 0px;
+
 }
 
 .color2ec{
@@ -674,6 +676,8 @@ body{
 .stacionar{
     display: flex;
     flex-direction: column;
+    border-color: #2a2a2a;
+    border-width: 10px;
     
 }
 
@@ -700,3 +704,11 @@ body{
 /* Footer End */
 
 
+
+.error{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 50px;
+    color: red;
+}
