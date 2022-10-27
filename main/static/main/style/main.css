@@ -10,6 +10,7 @@ body{
     height: 100%;
     padding: 0px;
     margin: 0px;
+    font-family: 'ProximaCondencedLight';
 
 }
 
@@ -225,7 +226,7 @@ body{
     padding: 35px 25px;
     margin: 0 10px;
     width: 750px;
-    height: 470px;
+    height: 477px;
     overflow: auto;
 }
   .popap span {
@@ -243,13 +244,13 @@ body{
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 25px;
 }
 .popap-form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 
 .popap_left_side{
     display: flex;
@@ -264,38 +265,124 @@ body{
 .popap_name_surname{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
 }
 
 .popap_name{
-    margin: 5px 0px 0px;
+    font: 16px;
+    color: #000000;
 }
 
-.first_name_input{
-    width: 147px;
+.popap_name_input{
+    width: 147.98px;
     height: 33px;
+    margin: 5px 0px 0px;
+    padding: 7px;
 }
 
 .popap_surname{
-    margin: 5px 0px 0px;
+    font: 16px;
+    color: #000000;
 }
 
-.popap_surname form.first_name{
-    width: 147px;
+.popap_surname__input{
+    width: 147.98px;
     height: 33px;
+    margin: 5px 0px 0px;
+    padding: 7px;
+}
+
+.popap_email{    
+    display: flex;
+    flex-direction: column;
+    font: 16px;
+    color: #000000;
+}
+
+.popap_email label{
+    margin-bottom: 5px;
+}
+
+.popap_email__input{
+    width: 314px;
+    height: 33px;
+    margin: 5px 0px 0px;
+    padding: 7px;
 }
 
 .popap_phone{
+    display: flex;
+    flex-direction: column;
+    font: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.popap_phone label{
+    margin-bottom: 5px;
+}
+
+.popap_phone__input{
+    width: 314.89px;
+    height: 33px;
+}
+
+.popap_course{
+    display: flex;
+    flex-direction: column;
+    font: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.popap_course__input{
+    width: 314px;
+    height: 33px;
+    margin: 5px 0px 0px;
+    padding: 7px;
+}
+
+.popap_comment{
+    display: flex;
+    flex-direction: column;
+    font: 16px;
+    color: #000000;
+}   
+
+.popap_comment__input{
+    width: 314px;
+    height: 100px;
+    margin: 5px 0px 0px;
+    padding: 7px;
+}
+
+.messengers{
+    margin-bottom: 10px;
+}
+
+.messengers__header{
+    margin-bottom: 10px;
+}
+
+.messegers__icons a{
+    margin-right: 10px;
+}
+
+.popap_time{
+    margin-bottom: 10px;
+}
+
+.popap_time__desc{
 
 }
 
-.popap_messengers{
-
+.popap_time input{
+    width: 314px;
+    height: 33px;
+    margin: 5px 0px 0px;
+    padding: 7px;
 }
-
-.popap_email{
-
-}
-
 
 
 .submit_request_button{
@@ -306,7 +393,7 @@ body{
     padding: 10px;
     color: #FFF;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 45px;
     margin-left: 250px;
   }
 
@@ -545,7 +632,7 @@ body{
     width: 320px;
     height: 39px;
 }
-
+с
 .cons__mesengers{
     padding-top:10px;
 }
