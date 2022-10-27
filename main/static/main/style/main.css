@@ -28,7 +28,7 @@ body{
 }
 
 .color329{
-    color: #3298F2;
+    color: #009EDFCC;;
 }
 
 /* Header Start */
@@ -79,6 +79,7 @@ body{
 .left_side__logo{
     margin-right: 6px;
     cursor: pointer;
+    color: #2a2a2a;
 }
 
 
@@ -96,6 +97,8 @@ body{
 
 .left_side__phone_number{
     margin-right: 6px;
+    color: #2A2A2A;
+    font-weight: 800;
 }
 
 .left_side__telegram_icon{
@@ -118,6 +121,7 @@ body{
     font:16px;
     color: #2a2a2a!important;
     cursor: pointer;
+    font-weight: 800;
 }
 
 .sticky_menu__make_request{
@@ -129,13 +133,15 @@ body{
     min-width: 155px;
     max-width: 222px;
     height: 44px;
-    font-weight: 400;
+    font-weight: 800;
     transition-duration: .3s;
 }
 
 .sticky_menu__dropdown{
     margin-left: 35px;
     cursor: pointer;
+    font-weight: 900;
+    margin-right: 20px;
 }
 
 /* DropDown Menu Start */
@@ -168,6 +174,7 @@ body{
 .sticky_menu__nav a:hover{
     background-color: rgba(20, 143, 228, 0.8);
     color: #FFF;
+
 }
 .sticky_menu__dropdown:hover .sticky_menu__nav{
     visibility: visible;
@@ -386,9 +393,6 @@ body{
     margin-bottom: 10px;
 }
 
-.popap_time__desc{
-
-}
 
 .popap_time input{
     width: 314px;
@@ -695,10 +699,6 @@ body{
     margin-right: 10px;
 }
 
-.cons__telegram_icon{
-
-}
-
 .cons__btn{
     color: #fff;
     font-size: 16px;
@@ -753,9 +753,6 @@ body{
     margin-top: 40px;
 }
 
-.all_courses_stats_persentage {
-
-}
 
 .persentage{
     color: #FFF;
@@ -767,10 +764,6 @@ body{
     color: #AEAEAE;
     font-size: 16px;
     font-family: Poppins;
-}
-
-.all_courses_stats_working{
-
 }
 
 .working__number{
@@ -787,9 +780,6 @@ body{
     font-family: Poppins;
 }
 
-.all_courses_stats_entry{
-
-}
 
 .entry__number{
     align-items: center;
@@ -812,9 +802,6 @@ body{
     font-family: Poppins;
 }
 
-.exp__number{
-
-}
 
 .years__desc{
     align-items: center;
@@ -896,13 +883,44 @@ body{
 /* Footer Start */
 
 .footer{
-    
+    display: flex;
+    flex-direction: row;
+    background-color: #2A2A2A;
+}
+
+.footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_wrapper__nav{
+    color: #ffffff;
+}
+
+.footer__first_column{
+
+}
+
+.footer__second_column{
+
+}
+
+.footer__third_column{
+
+}
+
+.footer__forth_column{
+
+}
+
+.footer__fifth_column{
+
 }
 
 /* Footer End */
 
 
-
+/* ERROR PAGE */
 .error{
     display: flex;
     justify-content: center;
