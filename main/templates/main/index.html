@@ -37,6 +37,7 @@
                                 {% csrf_token %}
                                 <div class="popap-form">
                                     <div class="popap_left_side">
+<<<<<<< HEAD
                                         {{form.errors}}
                                         <div class="popap_name_surname">
                                             <div class="popap_name">
@@ -88,9 +89,36 @@
                                             <p>{{form.comment.label_tag}}</p>
                                             {{form.comment}}
                                         </div>
+=======
+                                        {{request_form.errors}}
+                                        {{request_form.first_name.label_tag}}
+                                        <br>
+                                        {{request_form.first_name}}
+                                        <br>
+                                        {{request_form.last_name.label_tag}}
+                                        <br>
+                                        {{request_form.last_name}}
+                                        <br>
+                                        {{request_form.email.label_tag}}
+                                        <br>
+                                        {{request_form.email}}
+                                    </div>
+                                    <div class="popap_right_side">
+                                        {{request_form.phone.label_tag}}
+                                        <br>
+                                        {{request_form.phone}}
+                                        <br>
+                                        {{request_form.course.label_tag}}
+                                        <br>
+                                        {{request_form.course}}
+                                        <br>
+                                        {{request_form.comment.label_tag}}
+                                        <br>
+                                        {{request_form.comment}}
+>>>>>>> 125c86a61570f40a8e8803bfdbeaff23e28945f5
                                     </div>
                                 </div>
-                                <button class="submit_request_button" type="submit">Оформить заявку</button>
+                                <button class="submit_request_button" name="request_submit" type="submit">Оформить заявку</button>
                             </form>
                         </div>
                     </div>
@@ -225,13 +253,13 @@
                     <p class="consultation_header__desc">Залиште свій номер телефону і ми зв'яжемося з Вами найближчим часом</p>
                     <div class="cons__feedback">
                         <span class="cons__name">Ім'я:*</span>
-                        {{form.first_name}}
+                        {{cons_form.first_name}}
                         <span class="cons__surname">Прізвище:*</span>
-                        {{form.last_name}}
+                        {{cons_form.last_name}}
                         <span class="cons__phone">Телефон:*</span>
-                        {{form.phone}}
+                        {{cons_form.phone}}
                         <span class="cons__email">Email:*</span>
-                        {{form.email}}
+                        {{cons_form.email}}
                         <p class="cons__mesengers">Мессенджер:</p>
                         <div class="cons__mesenger_icons">
                             <a href='#' class="cons__phone_icon">
@@ -247,7 +275,7 @@
                         </div>
 
 
-                        <button class="cons__btn" type='submit'>Замовити</button>
+                        <button class="cons__btn" name='cons_submit' type='submit'>Замовити</button>
 
                 </div>
             </form>

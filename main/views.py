@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Course, Request
-from .forms import RequestForm
+from .forms import RequestForm, ConsForm
 from telethon.sync import TelegramClient
 import asyncio
 from telethon import types
@@ -41,18 +41,30 @@ def index(request):
         course_right_bottom = Course.objects.get(id=4)
     except Course.DoesNotExist:
         course_right_bottom = None
-    form = RequestForm()
+    request_form = RequestForm()
+    cons_form = ConsForm()
     if request.method == 'POST':
-        form = RequestForm(request.POST)
-        if form.is_valid():
-            form.save()    
-            last_request = Request.objects.all().last()
-            import threading
-            t = threading.Thread(target=send_message_to_request, args=(last_request,), kwargs={})
-            t.setDaemon(True)
-            t.start()
+        if "request_submit" in request.POST:
+            form = RequestForm(request.POST)
+            if form.is_valid():
+                form.save()    
+                last_request = Request.objects.all().last()
+                import threading
+                t = threading.Thread(target=send_message_to_request, args=(last_request,), kwargs={})
+                t.setDaemon(True)
+                t.start()
+        if "cons_submit" in request.POST:
+            form = ConsForm(request.POST)
+            if form.is_valid():
+                form.save()    
+                last_request = Request.objects.all().last()
+                import threading
+                t = threading.Thread(target=send_message_to_request, args=(last_request,), kwargs={})
+                t.setDaemon(True)
+                t.start()
 
-    context = {"form": form,
+    context = {"request_form": request_form,
+               "cons_form": cons_form,
                "course_left_top": course_left_top,
                "course_left_bottom": course_left_bottom,
                "course_right_top": course_right_top,
