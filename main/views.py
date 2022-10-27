@@ -20,6 +20,7 @@ def send_message_to_request(request):
                                                             f"Прізвище: {request.last_name}\n" 
                                                             f"Телефон: {request.phone}\n"
                                                             f"E-mail: {request.email}\n"
+                                                            f"Час: {request.time}\n"
                                                             f"Курс: {request.course}\n"
                                                             f"Комментарий: {request.comment}\n"))
     return

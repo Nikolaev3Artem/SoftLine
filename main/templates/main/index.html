@@ -79,8 +79,8 @@
                                             {{request_form.course}}
                                         </div>
                                         <div class="popap_time">
-                                            <p class="popap_time__desc">Час:</p>
-                                            <input type="text">
+                                            {{request_form.time.label_tag}}
+                                            {{request_form.time}}
                                         </div>
                                         <div class="popap_comment">
                                             {{request_form.comment.label_tag}}
@@ -177,7 +177,7 @@
                     <div class="course_block__white_bg">
                         <div class="courses_blocks__desc_left_top">
                             <p class="course__header">{{course_left_top.title}}</p>
-                            <p class="course_start">Старт:<span style="font-weight: 600;">{{course_left_top.when_start}}</span></p>
+                            <p class="course_start">Старт:<span style="font-weight: 600;">{{course_left_top.start_day}} {{course_left_top.start_month}}</span></p>
                             <button class="courses_blocks_btn">Детальніше</button>
                         </div>
                     </div>
@@ -188,7 +188,7 @@
                     <div class="course_block__white_bg">
                         <div class="courses_blocks__desc_left_bottom">
                             <p class="course__header">{{course_left_bottom.title}}</p>
-                            <p class="course_start">Старт:<span style="font-weight: 600;">{{course_left_bottom.when_start}}</span></p>
+                            <p class="course_start">Старт:<span style="font-weight: 600;">{{course_left_bottom.start_day}} {{course_left_bottom.start_month}}</span></p>
                             <button class="courses_blocks_btn">Детальніше</button>
                         </div>
                     </div>
@@ -203,7 +203,7 @@
                     </div>
                     <div class="courses_blocks__desc_right_top">
                         <p class="course__header">{{course_right_top.title}}</p>
-                        <p class="course_start">Старт:<span style="font-weight: 600;">{{course_right_top.when_start}}</span></p>
+                        <p class="course_start">Старт:<span style="font-weight: 600;">{{course_right_top.start_day}} {{course_right_top.month}}</span></p>
                         <button class="courses_blocks_btn">Детальніше</button>
                     </div>
                     
@@ -214,7 +214,7 @@
                     <div class="course_block__white_bg">
                         <div class="courses_blocks__desc_right_bottom">
                             <p class="course__header">{{course_right_bottom.title}}</p>
-                            <p class="course_start">Старт:<span style="font-weight: 600;">{{course_right_bottom.when_start}}</span></p>
+                            <p class="course_start">Старт:<span style="font-weight: 600;">{{course_right_bottom.start_day}} {{course_right_bottom.start_month}}</span></p>
                             <button class="courses_blocks_btn">Детальніше</button>
                         </div>
                     </div>
