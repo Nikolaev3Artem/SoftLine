@@ -11,7 +11,6 @@ body{
     padding: 0px;
     margin: 0px;
     font-family: 'ProximaCondencedLight';
-
 }
 
 .color2ec{
@@ -20,6 +19,16 @@ body{
 
 .font30{
     font-size: 30px;
+}
+
+.font20{
+    font-family: Montserrat, sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.color329{
+    color: #3298F2;
 }
 
 /* Header Start */
@@ -116,8 +125,12 @@ body{
     color: #FFFF!important;
     cursor: pointer;
     background-color: #2a2a2a;
-    border-color: #2a2a2a;
-    border-radius: 5px;
+    border: none;
+    min-width: 155px;
+    max-width: 222px;
+    height: 44px;
+    font-weight: 400;
+    transition-duration: .3s;
 }
 
 .sticky_menu__dropdown{
@@ -386,16 +399,17 @@ body{
 
 
 .submit_request_button{
-    width: 160px;
-    height: 50px;
+    width: 300px;
+    height: 42px;
     border: 0;
-    background-color: #2EC4B6;
-    padding: 10px;
+    font: 15px;
+    background-color: #009EDFCC;
     color: #FFF;
     text-transform: uppercase;
-    margin-top: 45px;
-    margin-left: 250px;
-  }
+    margin: 20px 185px 0px;
+    padding: 12px;
+    margin-top: 35px;
+}
 
 
 
@@ -405,13 +419,43 @@ body{
 /* Popup End */
 
 .numbers_courses{
+    font-family: Montserrat, sans-serif;
     font-size: 80px;
-    font-weight: 900;
+    font-weight: 800;
+    margin-right: 25px;
 }
 
 .best_courses{
-    margin-top: 170px;
+    margin-top: 130px;
     position: relative;
+}
+
+.best_courses__header_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.best_courses__button{
+    color: #fff;
+    font-size: 16px;
+    background-color: #2EC4B6;
+    font-family: sans-serif;
+    padding: 20px;
+    border-radius: 50px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.best_courses__button:hover{
+    color: #fff;
+    cursor: pointer;
 }
 
 .best_courses__header{
@@ -431,6 +475,7 @@ body{
 
 .best_courses_desc{
     display: flex;
+    margin: 10px;
 }
 
 .best_courses__left_side , .best_courses__right_side{
@@ -485,8 +530,8 @@ body{
 .course_bg_img{
     display: flex;
     position: relative;
-    max-width: 421px;
-    max-height: 285px;
+    width: 500px;
+    height: 256px;
     margin: 20px;
     box-shadow: rgb(42 42 42 / 70%) 0 5px 15px 5px;
     z-index: 1;
@@ -553,14 +598,17 @@ body{
     display: flex;
     color: #2a2a2a;
     font-size: 14px;
-    margin-top: 30px;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+
 }
 
 .courses_blocks_btn{
     display: flex;
-    color: #009EDF;
+    color:#009EDF;
+    border-color: #009EDF;
     padding: 10px 24px;
     font-size: 14px;
     width: 138px;
