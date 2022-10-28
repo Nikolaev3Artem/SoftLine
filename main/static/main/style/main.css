@@ -124,12 +124,38 @@ body{
     font-weight: 800;
 }
 
+.nav_menu__change_language{
+    position:absolute;
+    top: 28px;
+    left: 60px;
+    font: 24px;
+    color: #2a2a2a!important;
+    cursor: pointer;
+    font-weight: 800;
+}
+
 .sticky_menu__make_request{
     padding: 10px 18px 10px;
     color: #FFFF!important;
     cursor: pointer;
     background-color: #2a2a2a;
     border: none;
+    min-width: 155px;
+    max-width: 222px;
+    height: 44px;
+    font-weight: 800;
+    transition-duration: .3s;
+}
+
+.nav_menu__make_request{
+    padding: 10px 18px 10px;
+    color: #FFFF!important;
+    cursor: pointer;
+    background-color: #2a2a2a;
+    border: none;
+    position: absolute;
+    top: 10px;
+    left: 120px;
     min-width: 155px;
     max-width: 222px;
     height: 44px;
@@ -149,17 +175,26 @@ body{
     color: #2a2a2a!important;
 }
 .sticky_menu__nav{
-    visibility: hidden;
-    height: 100vh;
-    width: 35%;
+    height: 100%;
+    width: 0px;
     position: fixed;
+    top: 0;
     right: 0;
     background-color: #FFF;
+    overflow-x: hidden;
+    padding-top: 60px;
     transition: 0.5s;
 }
-.sticky_menu__nav a{
-    padding: 20px 0px 18px 100px;
-    font-size: 16px;
+.sticky_menu__nav .closebtn {
+    position: absolute;
+    top: 23px;
+    right: 25px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.nav_item{
+    padding: 20px 0px 16px 100px;
+    font-size: 14px;
     color: #2a2a2a;
     font-family: 'ProximaNova Bold',sans-serif;
     display: block;
@@ -167,21 +202,28 @@ body{
     text-transform: uppercase;
 }
 
-.header_make_request{
-    text-align: center;
+.sticky_manu__nav_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 34px;
+    align-items: center;
+    position: absolute;
+    width: 450px;
+    height: 70px;
+    background-color: rgb(0, 0, 0, 0.8);
 }
-
-.sticky_menu__nav a:hover{
+.nav_footer__contacts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav_item:hover{
     background-color: rgba(20, 143, 228, 0.8);
     color: #FFF;
 
 }
-.sticky_menu__dropdown:hover .sticky_menu__nav{
-    visibility: visible;
-}
-.sticky_menu__dropdown:hover .sticky_menu_header{
-    visibility: visible;
-}
+
 /* DropDown Menu End */
 
 /* Header Menu End */

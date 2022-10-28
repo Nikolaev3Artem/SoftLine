@@ -15,3 +15,10 @@ function show_popap(id_popap) {
     li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
     i++;
   }
+
+function closeNav() {
+  document.getElementById("sticky_menu__nav").style.width = "0";
+}
+function openNav() {
+  document.getElementById("sticky_menu__nav").style.width = "450px";
+}
