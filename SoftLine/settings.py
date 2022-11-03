@@ -2,9 +2,14 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
 RECIPIENTS_EMAIL = ['']
 DEFAULT_FROM_EMAIL = 'jimmypantalones@gmail.com'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+SECURE_SSL_REDIRECT=False
+SESSION_COOKIE_SECURE=False
+CSRF_COOKIE_SECURE=False
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -15,7 +20,7 @@ SECRET_KEY = 'django-insecure-h*s=(f6tkw#=pohas7284(d925z&8$1r3$#-9lwp_9_ng^x5%b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1',]
+ALLOWED_HOSTS = []
 
 
 # Application definition
