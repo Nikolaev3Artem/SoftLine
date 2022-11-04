@@ -542,179 +542,189 @@ body{
         align-items: center;
         .courses_blocks{
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            
-        }
-    } 
-    .courses__left_side , .courses__right_side{
-        display: flex;
-        position: relative;
-        .course_block{
-            .course_bg_img{
-                display: flex;
-                position: relative;
-                width: 500px;
-                height: 256px;
-                margin: 20px;
-                box-shadow: rgb(42 42 42 / 70%) 0 5px 15px 5px;
-                z-index: 1;
-            }
-            .course_block__white_bg{
-                display: flex;
-                background-color: #FFF;
-                z-index: 2;
-                .courses_blocks__desc_left_top{
-                    display: flex;
-                    position: absolute;
-                    flex-direction: column;
-                    z-index: 20;
-                    right: 54%;
-                    top: 25%;
-                    align-items: center;
-                }
-                .courses_blocks__desc_left_bottom{
-                    display: flex;
-                    position: absolute;
-                    flex-direction: column;
-                    z-index: 20;
-                    right: 55%;
-                    top: 125%;
-                    align-items: center;
-                }
-                
-                .courses_blocks__desc_right_top{
-                    display: flex;
-                    position: absolute;
-                    flex-direction: column;
-                    z-index: 20;
-                    right: 5%;
-                    top: -75%;
-                    align-items: center;
-                }
-                
-                .courses_blocks__desc_right_bottom{
-                    display: flex;
-                    position: absolute;
-                    flex-direction: column;
-                    z-index: 20;
-                    right: 3%;
-                    top: 25%;
-                    align-items: center;
-                }
-                .course__header{
-                    color: #2a2a2a;
-                    font-size: 18px;
-                    font-family: 'ProximaBold';
-                    font-weight:600;
-                    text-transform: uppercase;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                }
-                .course_start{
-                    display: flex;
-                    color: #2a2a2a;
-                    font-size: 14px;
-                    align-items: center;
-                    justify-content: center;
-                    margin-top: 10px;
-                    margin-bottom: 50px;
-                
-                }
-                .courses_blocks_btn{
-                    display: block;
-                    color:#009EDF;
-                    border-color: #009EDF;
-                    padding: 10px 24px;
-                    font-size: 14px;
-                    width: 138px;
-                    height: 41px;
-                    font-family:'ProximaCondencedLight';
-                    margin-top: 10px;
-                }
-            }
-        }
-    }
-
-    .course__consultation{
-        display: flex;
-        flex-direction: column;
-        width: 43%;
-        margin: 60px auto 0 auto;
-        height: 625px;
-        background-color: #FFFF;
-        box-shadow: rgb(42 42 42 / 40%) 0 5px 15px 5px;
-        padding: 40px;
-        .consultation__header{
-            display: flex;
-            justify-content: center;
-            color: #2a2a2a;
-            font-weight: 600;
-            font-size: 18px;
-            text-transform: uppercase;
-            
-        }
-        
-        .consultation_header__desc{
-            margin: 16px;
-        }
-        .cons__feedback{
-            display: flex;
-            flex-direction: column;
-            .cons__name{
-                display: flex;
-                margin-top: 15px;
-                font-size: 16px;
-                font-family: ProximaCondencedLight;
-            }
-            .cons__surname{
-                margin-top: 15px;
-                font-size: 16px;
-                font-family: ProximaCondencedLight;
-            }
-            
-            .cons__phone{
-                margin-top: 15px;
-                font-size: 16px;
-                font-family: ProximaCondencedLight;
-            }
-            
-            .cons__email{
-                margin-top: 15px;
-                font-size: 16px;
-                font-family: ProximaCondencedLight;
-            }
-            
-            .cons__input{
-                margin-top: 15px;
-                background-color: #fff;
-                margin: 5px;
-                padding:10px 7px;
-                width: 320px;
-                height: 39px;
-            }
-            с
-            .cons__mesengers{
-                padding-top:10px;
-            }
-            .cons__mesenger_icons{
+            flex-direction: row;
+            .row_column{
                 display: flex;
                 flex-direction: row;
-                padding: 15px 0px;
-                .cons__phone_icon{
-                    margin-right: 10px;
-                }
+                .courses__left_side , .courses__right_side{
+                    display: flex;
+                    position: relative;
+                    flex-direction: column;
+                    .course_block{
+                        .course_bg_img{
+                            display: flex;
+                            position: relative;
+                            width: 500px;
+                            height: 256px;
+                            margin: 20px;
+                            box-shadow: rgb(42 42 42 / 70%) 0 5px 15px 5px;
+                            z-index: 1;
+                        }
+                        .course_block__white_bg{
+                            display: flex;
+                            background-color: #FFF;
+                            z-index: 2;
+                            .courses_blocks__desc_left_top{
+                                display: flex;
+                                position: absolute;
+                                flex-direction: column;
+                                box-sizing: border-box;
+                                z-index: 20;
+                                right: 20%;
+                                top: 10%;
+                                align-items: center;
+                            }
+                            .courses_blocks__desc_left_bottom{
+                                display: flex;
+                                position: absolute;
+                                flex-direction: column;
+                                box-sizing: border-box;
+                                z-index: 20;
+                                right: 20%;
+                                top: 55%;
+                                align-items: center;
+                            }
+                            
+                            .courses_blocks__desc_right_top{
+                                display: flex;
+                                position: absolute;
+                                flex-direction: column;
+                                box-sizing: border-box;
+                                z-index: 20;
+                                right: 20%;
+                                top: 10%;
+                                align-items: center;
+                            }
+                            
+                            .courses_blocks__desc_right_bottom{
+                                display: flex;
+                                position: absolute;
+                                flex-direction: column;
+                                box-sizing: border-box;
+                                z-index: 20;
+                                right: 20%;
+                                top: 55%;
+                                align-items: center;
+                            }
+                            .course__header{
+                                color: #2a2a2a;
+                                font-size: 18px;
+                                font-family: 'ProximaBold';
+                                font-weight:600;
+                                text-transform: uppercase;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                            }
+                            .course_start{
+                                display: flex;
+                                color: #2a2a2a;
+                                font-size: 14px;
+                                align-items: center;
+                                justify-content: center;
+                                margin-top: 10px;
+                                margin-bottom: 50px;
+                            
+                            }
+                            .courses_blocks_btn{
+                                display: block;
+                                color:#009EDF;
+                                border-color: #009EDF;
+                                padding: 10px 24px;
+                                font-size: 14px;
+                                width: 138px;
+                                height: 41px;
+                                font-family:'ProximaCondencedLight';
+                                margin-top: 10px;
+                            }
+                        }
+                    }        
             }
-            .cons__btn{
-                color: #fff;
-                font-size: 16px;
-                font-family: Arial;
-                background-color: #009EDF;
-                margin: 35px;
-                padding: 12px 55px;
+            }
+            
+        .course__consultation{
+            display: flex;
+            flex-direction: column;
+            width: 425px;
+            height: 625px;
+            background-color: #FFFF;
+            box-shadow: rgb(42 42 42 / 40%) 0 5px 15px 5px;
+            padding: 40px;
+            justify-content: center;
+            align-items: center;
+            .consultation__header{
+                display: flex;
+                justify-content: center;
+                color: #2a2a2a;
+                font-weight: 600;
+                font-size: 18px;
+                text-transform: uppercase;
+                
+            }
+            
+            .consultation_header__desc{
+                margin: 16px;
+            }
+            .cons__feedback{
+                display: flex;
+                flex-direction: column;
+                .cons__name{
+                    display: flex;
+                    margin-top: 15px;
+                    font-size: 16px;
+                    font-family: ProximaCondencedLight;
+                }
+                .cons__surname{
+                    margin-top: 15px;
+                    font-size: 16px;
+                    font-family: ProximaCondencedLight;
+                }
+                
+                .cons__phone{
+                    margin-top: 15px;
+                    font-size: 16px;
+                    font-family: ProximaCondencedLight;
+                }
+                
+                .cons__email{
+                    margin-top: 15px;
+                    font-size: 16px;
+                    font-family: ProximaCondencedLight;
+                }
+                
+                .cons__input{
+                    margin-top: 15px;
+                    background-color: #fff;
+                    margin: 5px;
+                    padding:10px 7px;
+                    width: 320px;
+                    height: 39px;
+                }
+                с
+                .cons__mesengers{
+                    padding-top:10px;
+                }
+                .cons__mesenger_icons{
+                    display: flex;
+                    flex-direction: row;
+                    padding: 15px 0px;
+                    .cons__phone_icon{
+                        margin-right: 10px;
+                    }
+                }
+                .cons__btn{
+                    color: #fff;
+                    font-size: 16px;
+                    font-family: Arial;
+                    background-color: #009EDF;
+                    margin: 35px;
+                    padding: 12px 55px;
+                }
             }
         }
     }
+    }
+
+
 
     .all_courses{
         margin-top: 40px;
