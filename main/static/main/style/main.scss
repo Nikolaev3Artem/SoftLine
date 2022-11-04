@@ -869,25 +869,38 @@ body{
                 .learning_with_univ_is__block{
                     display: flex;
                     flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
+                    justify-content: space-between;
                     box-shadow: rgb(42 42 42 / 40%) 0 5px 15px 5px;
                     .block-img-bg{
                         .block-bg-item{
-                            display: absolute;
+                            display: flex;
                             width: 48px;
                             height: 48px;
+                            position: absolute;
+                            z-index: 2;
+                        }
+                        .block-icon-48{
+                            height: 48px;
+                            width: 48px;
+                        }
+                        .block-icon-38{
+                            height: 38px;
+                            width: 38px;
+                        }
+                        .block__colored_bg{
+                            display: flex;
+                            width: 38px;
+                            height: 38px;
                             position: absolute;
                             z-index: 2;
                         }
                         .block__blue_bg{
                             position: relative;
                             width: 100px;
-                            height: 120px;
-                            top: 0;
-                            left: 0;
-                            z-index: 0;
+                            height: 100px;
+
                         }
+
                     }
                     .learn__block_desk{
                         padding: 20px;
