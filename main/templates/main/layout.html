@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'main/style/reset.css' %}">
-    <link rel="stylesheet" href="{% static 'main/style/main.min.css' %}">
     <link rel="stylesheet" href="{% static 'main/style/media.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/style/layout.min.css' %}">
+    <link rel="preload" href="font/ProximaNovaCond-Light.woff" as="font" type="font/woff" crossorigin />
+    <link rel="preload" href="font/ProximaNovaCond-Semibold.woff" as="font" type="font/woff" crossorigin />
     <title>
         {% block title %}
         {% endblock %}
@@ -18,7 +20,68 @@
     {% block body %}
 
     {% endblock %}
+    <footer>
+        <div class="footer-menu">
+            <div class="footer-menu__top-column">
+                <p>LoGo</p> 
+                <p>Анкета нового студента</p> 
+                <p>Анкета після закінчення курсу</p> 
+                <p>Публічна оферта</p>
+                <p>Конфіденційність</p> 
+                <p>Карта сайту</p>   
+            </div>
+            <div class="footer_colums">
+                
+            </div>
+            <div class="colums-row">
+                <div class="footer-menu__first-column">
+                    <span>IT спеціальності</span>
+                    <div class="footer-menu__light">
+                        <a href="#">C# / .NET Developer</a>
+                        <a href="#">FrontEnd Developer</a>
+                        <a href="#">Java Developer</a>
+                        <a href="#">Python Developer</a>
+                    </div>
+                </div>
+            
+                <div class="footer-menu__second-column">
+                    <a href="#">Про нас</a> 
+                    <a href="#">Курси і ціни</a> 
+                    <a href="#">Розклад</a> 
+                    <a href="#">Акції та знижки</a> 
+                </div>
+                <div class="footer-menu__third-column">
+                    <a href="#">Навчання</a> 
+                    <a href="#">Компаніям</a> 
+                    <a href="#">Іт Заходи</a> 
+                    <a href="#">Контакти</a> 
+                </div>
+                <div class="footer-menu__fourth-column">
+                    <p>Підпишись на розсилку</p>
+                </div>
+                <div class="footer-menu__fifth-column">
+                    <div class="fifth-column__up">
+                        <a href="#header"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="50" fill="#FFFFFF" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                        </svg></a> 
+                        <p>Вгору</p>
+                    </div>
+                    <div class="location">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#FFFFFF class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg></a>
+                        <p>Ми на мапі</p>
+                    </div>
 
+                </div>
+            </div>
+            
+            <div class="footer-menu__bottom-column">
+
+            </div>
+        </div>
+    </footer>
     <script src="{% static 'main/javascript/jquery-3.6.1.min.js' %}"></script>
     <script src="{% static 'main/javascript/script.js' %}"></script>
 </body>
