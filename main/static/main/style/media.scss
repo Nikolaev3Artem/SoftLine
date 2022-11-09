@@ -1,9 +1,8 @@
 @media(max-width:1441px){
     .main_content{
         .best_courses{
-            margin-top: -20px;
+            margin-top: -45px;
             flex-direction: column;
-
         }
         .specialty_courses{
             .courses_blocks{
@@ -22,12 +21,64 @@
     }
 }
 
-@media(max-width:1024px){
+@media(max-width:1025px){
+    .header{
+        width: 100%;
+        height: 80vh;
+        margin: 0;
+        padding: 0;
+
+        
+        .header__slider{   
+            margin: 0;
+            padding: 0;
+            .slider-item{
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+    }
+    .main_content{
+        .best_courses{
+            margin-top: -210px;
+            .best_courses__header_button{
     
-}
+            }
+        }
+    }
+    footer{
+        .footer-menu{
+            .footer-menu__fourth-column p{
+                display: none;
+            }
+        }
+    }
+
+}   
+        
+        
+            
 
 @media(max-width:768px){
-
+    .main_content{
+        .specialty_courses{
+            .courses_blocks{
+                .row_column{
+                    display: flex;
+                    flex-direction: column;
+                    .courses__left_side , .courses__right_side{
+                        .course_block{
+                            .course_bg_img{
+    
+                            }
+                        }        
+                    }
+                    
+                }
+            }   
+        }
+        }
 }
 
 @media(max-width:425px){
