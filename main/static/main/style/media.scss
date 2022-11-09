@@ -78,7 +78,37 @@
                 }
             }   
         }
+        .side-padding{
+            .learning_with_univ_is{
+                .learning_with_univ_is__header{
+
+                }
+                .learning_with_univ__grid{
+                    display: grid;
+                    //сюда ставь новый грид 2 на 5
+                    .learning_with_univ_is__block{
+                        .block-img-bg{
+                            .block-bg-item{
+                            }
+                            .block-icon-48{
+                            }
+                            .block-icon-38{
+                            }
+                            .block__colored_bg{
+                            }
+                            .block__blue_bg{
+    
+                            }
+    
+                        }
+                        .learn__block_desk{
+                        }
+                    }
+                }
+                
+            }
         }
+    }
 }
 
 @media(max-width:425px){
