@@ -80,6 +80,8 @@ body{
             margin-right: 6px;
             cursor: pointer;
             color: #2a2a2a;
+            margin-bottom: 15px;
+            margin-right: 20px;
         }
         
         
@@ -410,10 +412,9 @@ body{
             justify-content: center;
             .nav_footer__logo{
                 position: absolute;
-                z-index: 7;
-                color: #FFF;
-                left: 0;
-                bottom: 50%;
+                left: 15px;
+                bottom: 25%;
+                z-index: 8;
             }
             .nav_footer__contacts{
                 display: flex;
@@ -424,23 +425,24 @@ body{
                     z-index: 0;
                     color: #000000;
                 }
+
                 .nav_footer__phone_icon{
                     position: absolute;
-                    left: 50px;
-                    bottom: 40%;
+                    left: 130px;
+                    bottom: 28%;
                     z-index: 7;
                 }
                 .nav_footer__phone_number{
                     position: absolute;
-                    left: 80px;
-                    bottom: 45%;
+                    left: 160px;
+                    bottom: 30%;
                     z-index: 7;
                     color: #FFF;
                 }
                 .nav_footer__telegram_icon{
                     position: absolute;
-                    left: 180px;
-                    bottom: 40%;
+                    left: 260px;
+                    bottom: 28%;
                     z-index: 7;
                     margin-left: 15px;
                 }
@@ -455,7 +457,6 @@ body{
         display: flex;
         position: relative;
         justify-content: center;
-        
         .slider-item{
             width: 100%;
             height: 100%;
@@ -513,6 +514,7 @@ body{
             justify-content: center;
             margin: 10px;
             .best_courses__left_side , .best_courses__right_side{
+                width: 50%;
                 padding: 25px;
             }
             p{

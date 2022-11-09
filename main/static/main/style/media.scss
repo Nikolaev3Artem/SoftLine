@@ -25,27 +25,20 @@
     .header{
         width: 100%;
         height: 80vh;
-        margin: 0;
-        padding: 0;
-
-        
-        .header__slider{   
-            margin: 0;
-            padding: 0;
-            .slider-item{
-                margin: 0;
-                padding: 0;
-            }
-        }
-
     }
     .main_content{
+        margin-top: -210px;
         .best_courses{
-            margin-top: -210px;
-            .best_courses__header_button{
-    
+            .courses_wrapper{
+                .best_courses{
+                    margin-top: -210px; 
+                    .best_desc{
+                    }
+                }
             }
         }
+
+
     }
     footer{
         .footer-menu{
@@ -60,29 +53,28 @@
         
             
 
-@media(max-width:768px){
+@media(max-width:769px){
+    .header__slider{
+        .img_desc{
+            position: absolute;
+            top: 30%;
+            left: 0;
+            font-size: 20px;
+        }
+    }
+
     .main_content{
+        margin-top: -340px;
         .specialty_courses{
             .courses_blocks{
                 .row_column{
                     display: flex;
-                    flex-direction: column;
-                    .courses__left_side , .courses__right_side{
-                        .course_block{
-                            .course_bg_img{
-    
-                            }
-                        }        
-                    }
-                    
+                    flex-direction: column;      
                 }
             }   
         }
         .side-padding{
             .learning_with_univ_is{
-                .learning_with_univ_is__header{
-
-                }
                 .learning_with_univ__grid{
                     display: grid;
                     grid-template-columns: 1fr 1fr;
@@ -114,7 +106,7 @@
 }
 
 @media(max-width:425px){
-
+    
 }
 
 @media(max-width:375px){
