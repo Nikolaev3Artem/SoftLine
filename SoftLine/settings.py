@@ -1,4 +1,5 @@
 from pathlib import Path
+from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,6 +29,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'main',
     'debug_toolbar',
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,6 +42,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
@@ -106,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'uk'
 
 TIME_ZONE = 'UTC'
 
@@ -114,6 +117,14 @@ USE_I18N = True
 
 USE_TZ = True
 
+LANGUAGES = (
+    ('uk', _('Ukrainian')),
+    ('en', _('English')),
+)
+
+LOCALE_PATHS = (
+    BASE_DIR / "main/locale",
+)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/

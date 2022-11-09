@@ -2,6 +2,7 @@
 {% block title %}Home Page{% endblock %}
 {% load static %}
 {% block body %}
+{% load i18n %}
 <div class="header">
     <div class="header absolute">
         <div class="header__sticky_menu">
@@ -26,13 +27,19 @@
                 </div>
             </div>
             <div class="sticky_menu__right_side">
-                <p class="sticky_menu__change_language">UA</p>
-                <button class="sticky_menu__make_request" onclick="show_popap('modal-1')">Залишити заявку</button>
+                {% get_current_language as LANGUAGE_CODE %}
+                {% if LANGUAGE_CODE == "uk" %}
+                    <a href='http://127.0.0.1:8000/en/' class="sticky_menu__change_language">EN</a>
+                {% endif %}
+                {% if LANGUAGE_CODE == "en" %}
+                    <a href='http://127.0.0.1:8000/uk/' class="sticky_menu__change_language">UA</a>
+                {% endif %}
+                <button class="sticky_menu__make_request" onclick="show_popap('modal-1')">{% trans "Залишити заявку" %}</button>
                 <div class="overlay" id="modal-1">
                     <div class="flex-popap">
                         <div class="popap">
-                            <span class="close_popap">Закрыть</span>
-                            <p class="popap-title">Записатися на курс</p>
+                            <span class="close_popap">{% trans "Закрыть" %}</span>
+                            <p class="popap-title">{% trans "Записатися на курс" %}</p>
                             <form action="." method="POST">
                                 {% csrf_token %}
                                 <div class="popap-form">
@@ -40,20 +47,20 @@
                                         {{request_form.errors}}
                                         <div class="popap_name_surname">
                                             <div class="popap_name">
-                                                {{request_form.first_name.label_tag}}
+                                                <label class="id_first_name">{% trans "Ім'я:*" %}</label>
                                                 {{request_form.first_name}}
                                             </div>
                                             <div class="popap_surname">
-                                                {{request_form.last_name.label_tag}}
+                                                <label class="id_last_name">{% trans "Прізвище:*" %}</label>
                                                 {{request_form.last_name}}
                                             </div>
                                         </div>
                                         <div class="popap_phone">
-                                            {{request_form.phone.label_tag}}
+                                            <label class="id_phone">{% trans "Телефон:" %}</label>
                                             {{request_form.phone}}
                                         </div>
                                         <div class="messengers">
-                                            <p class="messengers__header">Мессенджер:</p>
+                                            <p class="messengers__header">{% trans "Мессенджер:" %}</p>
                                             <div class="messegers__icons">
                                                 <a href="#">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" fill="green" class="bi bi-telephone" viewBox="0 0 16 16">
@@ -68,48 +75,53 @@
                                             </div>
                                         </div>
                                         <div class="popap_email">
-                                            {{request_form.email.label_tag}}
+                                            <label class="id_email">E-mail:*:</label>
                                             {{request_form.email}}
                                         </div>
                                     </div>
                                     <div class="popap_right_side">
 
                                         <div class="popap_course">
-                                            {{request_form.course.label_tag}}
+                                            <label class="id_course">{% trans "Курс:*" %}</label>
                                             {{request_form.course}}
                                         </div>
                                         <div class="popap_time">
-                                            {{request_form.time.label_tag}}
+                                            <label class="id_time">{% trans "Час:" %}</label>
                                             {{request_form.time}}
                                         </div>
                                         <div class="popap_comment">
-                                            {{request_form.comment.label_tag}}
+                                            <label class="id_comment">{% trans "Коментар:" %}</label>
                                             {{request_form.comment}}
                                         </div>
                                     </div>
                                 </div>
-                                <button class="submit_request_button" name="request_submit" type="submit">Оформити заявку</button>
+                                <button class="submit_request_button" name="request_submit" type="submit">{% trans "Оформити заявку" %}</button>
                             </form>
                         </div>
                     </div>
                 </div>
                 <div class="sticky_menu__dropdown">
-                    <span id="open_nav_button" onclick="openNav()">Меню</span>
+                    <span id="open_nav_button" onclick="openNav()">{% trans "Меню" %}</span>
                 </div>
                 <div id="sticky_menu__nav" class="sticky_menu__nav">
-                    <p class="nav_menu__change_language">UA</p>
-                    <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">Закрити &times;</span>
-                    <button class="nav_menu__make_request" onclick="show_popap('modal-1')">Залишити заявку</button>
-                    <a class="nav_item" href="#">IT спеціальності</a>
-                    <a class="nav_item" href="#">Онлайн навчання</a>
-                    <a class="nav_item" href="#">Курси і ціни</a>
-                    <a class="nav_item" href="#">Розклад</a>
-                    <a class="nav_item" href="#" >Акції та знижки</a>
-                    <a class="nav_item" href="#">IT Заходи</a>
-                    <a class="nav_item" href="#">Компаніям</a>
-                    <a class="nav_item" href="#">Навчання у нас</a>
-                    <a class="nav_item" href="#">Про нас</a>
-                    <a class="nav_item" href="#">Контакти</a>
+                    {% if LANGUAGE_CODE == "uk" %}
+                        <a href='http://127.0.0.1:8000/en/' class="nav_menu__change_language">EN</a>
+                    {% endif %}
+                    {% if LANGUAGE_CODE == "en" %}
+                        <a href='http://127.0.0.1:8000/uk/' class="nav_menu__change_language">UA</a>
+                    {% endif %}
+                    <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">{% trans "Закрити" %} &times;</span>
+                    <button class="nav_menu__make_request" onclick="show_popap('modal-1')">{% trans "Залишити заявку" %}</button>
+                    <a class="nav_item" href="#">{% trans "IT спеціальності" %}</a>
+                    <a class="nav_item" href="#">{% trans "Онлайн навчання" %}</a>
+                    <a class="nav_item" href="#">{% trans "Курси і ціни" %}</a>
+                    <a class="nav_item" href="#">{% trans "Розклад" %}</a>
+                    <a class="nav_item" href="#" >{% trans "Акції та знижки" %}</a>
+                    <a class="nav_item" href="#">{% trans "IT Заходи" %}</a>
+                    <a class="nav_item" href="#">{% trans "Компаніям" %}</a>
+                    <a class="nav_item" href="#">{% trans "Навчання у нас" %}</a>
+                    <a class="nav_item" href="#">{% trans "Про нас" %}</a>
+                    <a class="nav_item" href="#">{% trans "Контакти" %}</a>
                     <div class="sticky_menu__nav_footer">
                         <p class="nav_footer__logo">Logo</p>
                         <div class="nav_footer__contacts">
@@ -139,7 +151,7 @@
     <div class="header__slider">
         <img class='slider-item' src="{% static 'main/img/slider1.jpg' %}" alt="" srcset="">
             
-        <p class="img_desc" >Університет <br> <span class="color2ec">освіти</span> та <span class="color2ec">комп'ютерних технологій</span></p>
+        <p class="img_desc" >{% trans "Університет" %} <br> <span class="color2ec">{% trans "освіти" %}</span>{% trans "та" %} <span class="color2ec">{% trans "комп'ютерних технологій" %}</span></p>
     </div>
 
 
@@ -150,48 +162,51 @@
 <div class="main_content">
     <div class="best_courses">
         <div class="best_courses__header_button">
-            <a href='#first-block'class="best_courses__button">НАЙКРАЩІ КУРСИ УКРАЇНИ</a>
+            <a href='#first-block'class="best_courses__button">{% trans "НАЙКРАЩІ КУРСИ УКРАЇНИ" %}</a>
         </div>
         
-        <p class="best_courses__header">Найкращі курси України</p>
+        <p class="best_courses__header">{% trans "Найкращі курси України" %}</p>
         <div class="courses_wrapper">
             <div class="best_courses__left_side">
                 <div class="best_courses_desc">
                     <span class="color2ec numbers_courses" id="first-block">01 </span>
-                    <p class="font20">Зручний графік <span class="color329">занять</span></p>
+                    <p class="font20">{% trans "Зручний графік" %} <span class="color329">{% trans "занять" %}</span></p>
                 </div>
-                <p class="best_desc">400+ відео відгуків від працевлаштованих та задоволених студентів. Найбільша кількість в Україні як підтвердження якості.</p>
+                <p class="best_desc">{% blocktranslate %} 400+ відео відгуків від працевлаштованих та задоволених студентів. Найбільша кількість в Україні як підтвердження якості. {% endblocktranslate %}</p>
                 <div class="best_courses_desc">
                     <span class="color2ec numbers_courses" >02 </span>
-                    <p class="font20">Гарантія <span class="color329">працевлаштування</span></p>
+                    <p class="font20">{% trans "Гарантія" %} <span class="color329">{% trans "працевлаштування" %}</span></p>
                 </div>
-                <p class="best_desc">Єдина в Україні компанія з відео відгуками від роботодавців та реальними партнерами.</p>
+                <p class="best_desc">{% blocktranslate %} Єдина в Україні компанія з відео відгуками від роботодавців та реальними партнерами. {% endblocktranslate %}</p>
                 <div class="best_courses_desc">
                     <span class="color2ec numbers_courses">03 </span>
-                    <p class="font20">Освіта для дітей<span class="color329"> 9-15 років</span></p>
+                    <p class="font20">{% trans "Освіта для дітей" %}<span class="color329">{% trans "9-15 років" %}</span></p>
                 </div>
-                <p class="best_desc">Єдині в Україні, хто має спільну інтернатуру з ІТ-компаніями з top-списку DOU. Конкурентам про таке тільки мріяти.</p>
+                <p class="best_desc">{% blocktranslate %} Єдині в Україні, хто має спільну інтернатуру з ІТ-компаніями з top-списку DOU. Конкурентам про таке тільки мріяти. {% endblocktranslate %}</p>
             </div>
             <div class="best_courses__right_side">
                 <div class="best_courses_desc">
                     <span class="color2ec numbers_courses">04 </span>
-                    <p class="font20">Стажування в <span class="color329">IT</span></p>
+                    <p class="font20">{% trans "Стажування в" %} <span class="color329">IT</span></p>
                 </div>
-                <p class="best_desc">Гарантуємо 100% працевлаштування після будь-якого комплексного курсу з інкубатором. Фіксуємо гарантію в договорі.</p>
+                <p class="best_desc">{% blocktranslate %} Гарантуємо 100% працевлаштування після будь-якого комплексного курсу з інкубатором. Фіксуємо гарантію в договорі. {% endblocktranslate %}</p>
                 <div class="best_courses_desc">
                     <span class="color2ec numbers_courses">05 </span>
-                    <p class="font20">IT <span class="color329">інкубатор</span></p>
+                    <p class="font20">IT <span class="color329">{% trans "інкубатор" %}</span></p>
                 </div>
-                <p class="best_desc">Пройдіть курс наново, якщо щось пропустили або не зрозуміли. Це безкоштовно для всіх випускників наших курсів.</p>
+                <p class="best_desc">{% blocktranslate %} Пройдіть курс наново, якщо щось пропустили або не зрозуміли. Це безкоштовно для всіх випускників наших курсів. {% endblocktranslate %}</p>
                 <div class="best_courses_desc">
                     <span class="color2ec numbers_courses">06 </span>
-                    <p class="font20">Освіта для <span class="color329">дорослих</span></p>
+                    <p class="font20">{% trans "Освіта для" %} <span class="color329">{% trans "дорослих" %}</span></p>
                 </div>  
-                <p class="best_desc">Не треба кидати роботу заради курсів програмування. Поєднюйте їх з основною роботою як це зробили сотні наших студентів.</p>
+                <p class="best_desc">{% blocktranslate %} Не треба кидати роботу заради курсів програмування. Поєднюйте їх з основною роботою як це зробили сотні наших студентів. {% endblocktranslate %}</p>
             </div>
         </div>
     </div>
-    <p class="sp_courses__header">Навчання за спеціальністю</p>
+    <p class="sp_courses__header">{% trans "Навчання за спеціальністю" %}</p>
+
+    {% blocktranslate asvar more %}Детальніше{% endblocktranslate %}
+    {% blocktranslate asvar start %}Старт:{% endblocktranslate %}
     <div class="specialty_courses">
         
         <div class="courses_blocks">
@@ -203,8 +218,8 @@
                         <div class="course_block__white_bg">
                             <div class="courses_blocks__desc_left_top">
                                 <p class="course__header">{{course_left_top.title}}</p>
-                                <p class="course_start">Старт:<span style="font-weight: 600;">{{course_left_top.start_day}} {{course_left_top.start_month}}</span></p>
-                                <button class="courses_blocks_btn">Детальніше</button>
+                                <p class="course_start">{{ start }}<span style="font-weight: 600;">{{course_left_top.start_day}} {{course_left_top.start_month}}</span></p>
+                                <button class="courses_blocks_btn">{{ more }}</button>
                             </div>
                         </div>
                     </div>
@@ -214,8 +229,8 @@
                         <div class="course_block__white_bg">
                             <div class="courses_blocks__desc_left_bottom">
                                 <p class="course__header">{{course_left_bottom.title}}</p>
-                                <p class="course_start">Старт:<span style="font-weight: 600;">{{course_left_bottom.start_day}} {{course_left_bottom.start_month}}</span></p>
-                                <button class="courses_blocks_btn">Детальніше</button>
+                                <p class="course_start">{{ start }}<span style="font-weight: 600;">{{course_left_bottom.start_day}} {{course_left_bottom.start_month}}</span></p>
+                                <button class="courses_blocks_btn">{{ more }}</button>
                             </div>
                         </div>
                     </div>
@@ -229,8 +244,8 @@
                         <div class="course_block__white_bg">
                             <div class="courses_blocks__desc_right_top">
                                 <p class="course__header">{{course_right_top.title}}</p>
-                                <p class="course_start">Старт:<span style="font-weight: 600;">{{course_right_top.start_day}} {{course_right_top.month}}</span></p>
-                                <button class="courses_blocks_btn">Детальніше</button>
+                                <p class="course_start">{{ start }}<span style="font-weight: 600;">{{course_right_top.start_day}} {{course_right_top.month}}</span></p>
+                                <button class="courses_blocks_btn">{{ more }}</button>
                             </div>
                         </div>    
                     </div>
@@ -240,8 +255,8 @@
                         <div class="course_block__white_bg">
                             <div class="courses_blocks__desc_right_bottom">
                                 <p class="course__header">{{course_right_bottom.title}}</p>
-                                <p class="course_start">Старт:<span style="font-weight: 600;">{{course_right_bottom.start_day}} {{course_right_bottom.start_month}}</span></p>
-                                <button class="courses_blocks_btn">Детальніше</button>
+                                <p class="course_start">{{ start }}<span style="font-weight: 600;">{{course_right_bottom.start_day}} {{course_right_bottom.start_month}}</span></p>
+                                <button class="courses_blocks_btn">{{ more }}</button>
                             </div>
                         </div>
                     </div>
@@ -249,18 +264,18 @@
             </div>
                 <form action='.' method='POST'>{% csrf_token %}
                     <div class="course__consultation">
-                        <p class="consultation__header">БЕЗКОШТОВНА КОНСУЛЬТАЦІЯ</p>
-                        <p class="consultation_header__desc">Залиште свій номер телефону і ми зв'яжемося з Вами найближчим часом</p>
+                        <p class="consultation__header">{% trans "БЕЗКОШТОВНА КОНСУЛЬТАЦІЯ" %}</p>
+                        <p class="consultation_header__desc">{% blocktranslate %}Залиште свій номер телефону і ми зв'яжемося з Вами найближчим часом{% endblocktranslate %}</p>
                         <div class="cons__feedback">
-                            <span class="cons__name">Ім'я:*</span>
+                            <span class="cons__name">{% trans "Ім'я" %}:*</span>
                             {{cons_form.first_name}}
-                            <span class="cons__surname">Прізвище:*</span>
+                            <span class="cons__surname">{% trans "Прізвище" %}:*</span>
                             {{cons_form.last_name}}
-                            <span class="cons__phone">Телефон:*</span>
+                            <span class="cons__phone">{% trans "Телефон" %}:*</span>
                             {{cons_form.phone}}
-                            <span class="cons__email">Email:*</span>
+                            <span class="cons__email">{% trans "Email" %}:*</span>
                             {{cons_form.email}}
-                            <p class="cons__mesengers">Мессенджер:</p>
+                            <p class="cons__mesengers">{% trans "Мессенджер" %}:</p>
                             <div class="cons__mesenger_icons">
                                 <a href='#' class="cons__phone_icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" fill="green" class="bi bi-telephone" viewBox="0 0 16 16">
@@ -275,7 +290,7 @@
                             </div>
     
     
-                            <button class="cons__btn" name='cons_submit' type='submit'>Замовити</button>
+                            <button class="cons__btn" name='cons_submit' type='submit'>{% trans "Замовити" %}</button>
                         </div>
                     </form>
             </div>
@@ -287,24 +302,24 @@
 
     
     <div class="all_courses">
-        <a href='#all-courses' class="all_courses__button">УСІ КУРСИ ТА ЦІНИ</a>
-        <p class="all_courses__header" id="all-courses">УСІ <span class="color2ec">КУРСИ</span> ТА <span class="color2ec">ЦІНИ</span> </p>
+        <a href='#all-courses' class="all_courses__button">{% trans "УСІ КУРСИ ТА ЦІНИ" %}</a>
+        <p class="all_courses__header" id="all-courses">{% trans "УСІ" %}<span class="color2ec">{% trans "КУРСИ" %}</span> {% trans "ТА" %} <span class="color2ec">{% trans "ЦІНИ" %}</span> </p>
         <div class="all_courses_stats">
             <div class="all_courses_stats_persentage">
                 <p>100%</p>
-                <span>Проходження</span>
+                <span>{% trans "Проходження" %}</span>
             </div>
             <div class="all_courses_stats_working">
                 <p>126</p>
-                <span>Люди, які працюють</span>
+                <span>{% trans "Люди, які працюють" %}</span>
             </div>
             <div class="all_courses_stats_entry">
                 <p>55К</p>
-                <span>Студенти зараховані</span>
+                <span>{% trans "Студенти зараховані" %}</span>
             </div>
             <div class="years_exp">
                 <p>100</p>
-                <span>Роки досвіду</span>
+                <span>{% trans "Роки досвіду" %}</span>
             </div>
         </div>
     </div>
@@ -312,7 +327,7 @@
     <div class="edu-type">
         <div class="edu-type__item">
             <div class="edu-type__header">ONLINE</div>
-            <p class="edu-type__small_desc">Навчайтеся вдома, в офісі, на курорті з будь-якої точки світу. Онлайн курси від OWU влаштовані таким чином, щоб відтворити живе спілкування між викладачем і студентами.
+            <p class="edu-type__small_desc">{% blocktranslate %} Навчайтеся вдома, в офісі, на курорті з будь-якої точки світу. Онлайн курси від OWU влаштовані таким чином, щоб відтворити живе спілкування між викладачем і студентами.{% endblocktranslate %}
             </p>
             <div class="item_type_container">
                 <a href="#">
@@ -356,8 +371,8 @@
         </div>
 
         <div class="edu-type__item">
-            <div class="edu-type__header">СТАЦІОНАР</div>
-            <p class="edu-type__small_desc">Навчання в офісах нашої компанії з особистим спілкуванням з менторами та іншими студентами. Обговорюйте питання, діліться кодом, спілкуйтесь з однодумцями в живу.
+            <div class="edu-type__header">{% trans "СТАЦІОНАР" %}</div>
+            <p class="edu-type__small_desc">{% blocktranslate %} Навчання в офісах нашої компанії з особистим спілкуванням з менторами та іншими студентами. Обговорюйте питання, діліться кодом, спілкуйтесь з однодумцями в живу. {% endblocktranslate %}
             </p>
             <div class="item_type_container">
                 <a href="#">
@@ -403,7 +418,7 @@
 
     <section class="side-padding">
         <div class="learning_with_univ_is">
-            <header class="learning_with_univ_is__header">НАВЧАННЯ В SOFTLINE ЦЕ</header>
+            <header class="learning_with_univ_is__header">{% trans "НАВЧАННЯ В SOFTLINE ЦЕ" %}</header>
             <div class="learning_with_univ__grid">
                 <div class="learning_with_univ_is__block">
                     <div class="block-img-bg">
@@ -412,7 +427,7 @@
                         </div>
                         <img class="block__blue_bg" src="{% static 'main/img/blue_section_bg.jpg' %}" alt="">
                     </div>
-                    <span class="learn__block_desk">Компактні групи до 15 осіб</span>
+                    <span class="learn__block_desk">{% trans "Компактні групи до 15 осіб" %}</span>
                 </div>
                 <div class="learning_with_univ_is__block">
                     <div class="block-img-bg">
@@ -422,7 +437,7 @@
                         <img class="block__blue_bg" src="{% static 'main/img/blue_section_bg.jpg' %}" alt="">
                     </div>
 
-                    <span class="learn__block_desk">Доступ до online відео курсів</span>
+                    <span class="learn__block_desk">{% trans "Доступ до online відео курсів" %}</span>
                 </div>
                 <div class="learning_with_univ_is__block">
                     <div class="block-img-bg">
@@ -431,7 +446,7 @@
                         </div>
                         <img class="block__blue_bg" src="{% static 'main/img/blue_section_bg.jpg' %}" alt="">
                     </div>
-                    <span class="learn__block_desk">Допомога в працевлаштуванні студента</span>
+                    <span class="learn__block_desk">{% trans "Допомога в працевлаштуванні студента" %}</span>
                 </div>
                 <div class="learning_with_univ_is__block">
                     <div class="block-img-bg">
@@ -440,7 +455,7 @@
                         </div>
                         <img class="block__blue_bg" src="{% static 'main/img/blue_section_bg.jpg' %}" alt="">
                     </div>
-                    <span class="learn__block_desk">Великий вибір спеціальностей та окремих курсів</span>
+                    <span class="learn__block_desk">{% trans "Великий вибір спеціальностей та окремих курсів" %}</span>
                 </div>
                 <div class="learning_with_univ_is__block">
                     <div class="block-img-bg">
@@ -449,7 +464,7 @@
                         </div>
                         <img class="block__blue_bg" src="{% static 'main/img/blue_section_bg.jpg' %}" alt="">
                     </div>
-                    <span class="learn__block_desk">Усі викладачі - сертифіковані тренери Microsoft</span>
+                    <span class="learn__block_desk">{% trans "Усі викладачі - сертифіковані тренери Microsoft" %}</span>
                 </div>
                 <div class="learning_with_univ_is__block">
                     <div class="block-img-bg">
@@ -458,7 +473,7 @@
                         </div>
                         <img class="block__blue_bg" src="{% static 'main/img/blue_section_bg.jpg' %}" alt="">
                     </div>
-                    <span class="learn__block_desk">Сервіс online тестування</span>
+                    <span class="learn__block_desk">{% trans "Сервіс online тестування" %}</span>
                 </div>
                 <div class="learning_with_univ_is__block">
                     <div class="block-img-bg">
@@ -467,7 +482,7 @@
                         </div>
                         <img class="block__blue_bg" src="{% static 'main/img/purple-rectangle.jpg' %}" alt="">
                     </div>
-                    <span class="learn__block_desk">Денне навчання в Києві</span>
+                    <span class="learn__block_desk">{% trans "Денне навчання в Києві" %}</span>
                 </div>
                 <div class="learning_with_univ_is__block">
                     <div class="block-img-bg">
@@ -476,7 +491,7 @@
                         </div>
                         <img class="block__blue_bg" src="{% static 'main/img/orange-rectangle.jpg' %}" alt="">
                     </div>
-                    <span class="learn__block_desk">Онлайн навчання в Zoom</span>
+                    <span class="learn__block_desk">{% trans "Онлайн навчання в Zoom" %}</span>
                 </div>
                 <div class="learning_with_univ_is__block">
                     <div class="block-img-bg">
@@ -485,7 +500,7 @@
                         </div>
                         <img  class="block__blue_bg" src="{% static 'main/img/blue-rectangle.jpg' %}" alt="">
                     </div>
-                    <span class="learn__block_desk">Корпоративні тренінги</span>
+                    <span class="learn__block_desk">{% trans "Корпоративні тренінги" %}</span>
                 </div>
             </div>
         </div>

@@ -1,0 +1,368 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-09 18:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\main\templates\main\index.html:37 .\main\templates\main\index.html:114
+msgid "Залишити заявку"
+msgstr "Fill request"
+
+#: .\main\templates\main\index.html:41
+msgid "Закрыть"
+msgstr "Close"
+
+#: .\main\templates\main\index.html:42
+msgid "Записатися на курс"
+msgstr "Sign up for a course"
+
+#: .\main\templates\main\index.html:50
+msgid "Ім'я:*"
+msgstr "Name:*"
+
+#: .\main\templates\main\index.html:54
+msgid "Прізвище:*"
+msgstr "Surname:*"
+
+#: .\main\templates\main\index.html:59
+msgid "Телефон:"
+msgstr "Phonenumber:"
+
+#: .\main\templates\main\index.html:63
+msgid "Мессенджер:"
+msgstr "Messenger:"
+
+#: .\main\templates\main\index.html:85
+msgid "Курс:*"
+msgstr "Course:*"
+
+#: .\main\templates\main\index.html:89
+msgid "Час:"
+msgstr "Time:"
+
+#: .\main\templates\main\index.html:93
+msgid "Коментар:"
+msgstr "Comment:"
+
+#: .\main\templates\main\index.html:98
+msgid "Оформити заявку"
+msgstr "Make a request"
+
+#: .\main\templates\main\index.html:104
+msgid "Меню"
+msgstr "Menu"
+
+#: .\main\templates\main\index.html:113
+msgid "Закрити"
+msgstr "Close"
+
+#: .\main\templates\main\index.html:115
+msgid "IT спеціальності"
+msgstr "IT specialty"
+
+#: .\main\templates\main\index.html:116
+msgid "Онлайн навчання"
+msgstr "Online training"
+
+#: .\main\templates\main\index.html:117
+msgid "Курси і ціни"
+msgstr "Courses and prices"
+
+#: .\main\templates\main\index.html:118
+msgid "Розклад"
+msgstr "Schedule"
+
+#: .\main\templates\main\index.html:119
+msgid "Акції та знижки"
+msgstr "Promotions and discounts"
+
+#: .\main\templates\main\index.html:120
+msgid "IT Заходи"
+msgstr "IT Activities"
+
+#: .\main\templates\main\index.html:121
+msgid "Компаніям"
+msgstr "Companies"
+
+#: .\main\templates\main\index.html:122
+msgid "Навчання у нас"
+msgstr "Study with us"
+
+#: .\main\templates\main\index.html:123
+msgid "Про нас"
+msgstr "About us"
+
+#: .\main\templates\main\index.html:124
+msgid "Контакти"
+msgstr "Contacts"
+
+#: .\main\templates\main\index.html:154
+msgid "Університет"
+msgstr "University"
+
+#: .\main\templates\main\index.html:154
+msgid "освіти"
+msgstr "education"
+
+#: .\main\templates\main\index.html:154
+msgid "та"
+msgstr "&"
+
+#: .\main\templates\main\index.html:154
+msgid "комп'ютерних технологій"
+msgstr "computer technologies"
+
+#: .\main\templates\main\index.html:165
+msgid "НАЙКРАЩІ КУРСИ УКРАЇНИ"
+msgstr "THE BEST COURSES IN UKRAINE"
+
+#: .\main\templates\main\index.html:168
+msgid "Найкращі курси України"
+msgstr "The best courses in Ukraine"
+
+#: .\main\templates\main\index.html:173
+msgid "Зручний графік"
+msgstr "Convenient schedule"
+
+#: .\main\templates\main\index.html:173
+msgid "занять"
+msgstr "classes"
+
+#: .\main\templates\main\index.html:175
+msgid ""
+" 400+ відео відгуків від працевлаштованих та задоволених студентів. "
+"Найбільша кількість в Україні як підтвердження якості. "
+msgstr ""
+"400+ video testimonials from employed and satisfied students.The largest "
+"number in Ukraine as a confirmation of quality."
+
+#: .\main\templates\main\index.html:178
+msgid "Гарантія"
+msgstr "Guarantee"
+
+#: .\main\templates\main\index.html:178
+msgid "працевлаштування"
+msgstr "employment"
+
+#: .\main\templates\main\index.html:180
+msgid ""
+" Єдина в Україні компанія з відео відгуками від роботодавців та реальними "
+"партнерами. "
+msgstr ""
+"The only company in Ukraine with video reviews from employers and real ones "
+"partners. "
+
+#: .\main\templates\main\index.html:183
+msgid "Освіта для дітей"
+msgstr "Education for kids"
+
+#: .\main\templates\main\index.html:183
+msgid "9-15 років"
+msgstr "9-15 year old"
+
+#: .\main\templates\main\index.html:185
+msgid ""
+" Єдині в Україні, хто має спільну інтернатуру з ІТ-компаніями з top-списку "
+"DOU. Конкурентам про таке тільки мріяти. "
+msgstr ""
+"The only ones in Ukraine who have a joint internship with IT companies from "
+"the top list D.O.U. Competitors can only dream of this."
+
+#: .\main\templates\main\index.html:190
+msgid "Стажування в"
+msgstr "Internship in"
+
+#: .\main\templates\main\index.html:192
+#, python-format
+msgid ""
+" Гарантуємо 100%% працевлаштування після будь-якого комплексного курсу з "
+"інкубатором. Фіксуємо гарантію в договорі. "
+msgstr ""
+"We guarantee 100%% employment after any comprehensive course with incubator. "
+"We fix the guarantee in the contract."
+
+#: .\main\templates\main\index.html:195
+msgid "інкубатор"
+msgstr "incubator"
+
+#: .\main\templates\main\index.html:197
+msgid ""
+" Пройдіть курс наново, якщо щось пропустили або не зрозуміли. Це безкоштовно "
+"для всіх випускників наших курсів. "
+msgstr ""
+"Take the course again if you missed something or did not understand. It is "
+"free for all graduates of our courses."
+
+#: .\main\templates\main\index.html:200
+msgid "Освіта для"
+msgstr "Education for"
+
+#: .\main\templates\main\index.html:200
+msgid "дорослих"
+msgstr "adults"
+
+#: .\main\templates\main\index.html:202
+msgid ""
+" Не треба кидати роботу заради курсів програмування. Поєднюйте їх з основною "
+"роботою як це зробили сотні наших студентів. "
+msgstr ""
+"You don't have to quit your job for programming courses. Combine them with "
+"the main one work, as hundreds of our students did."
+
+#: .\main\templates\main\index.html:206
+msgid "Навчання за спеціальністю"
+msgstr "Studying by specialty"
+
+#: .\main\templates\main\index.html:208
+msgid "Детальніше"
+msgstr "More"
+
+#: .\main\templates\main\index.html:209
+msgid "Старт:"
+msgstr "Start:"
+
+#: .\main\templates\main\index.html:267
+msgid "БЕЗКОШТОВНА КОНСУЛЬТАЦІЯ"
+msgstr "FREE CONSULTATION"
+
+#: .\main\templates\main\index.html:268
+msgid "Залиште свій номер телефону і ми зв'яжемося з Вами найближчим часом"
+msgstr "Leave your phone number and we will contact you shortly"
+
+#: .\main\templates\main\index.html:270
+msgid "Ім'я"
+msgstr "Name"
+
+#: .\main\templates\main\index.html:272
+msgid "Прізвище"
+msgstr "Surname"
+
+#: .\main\templates\main\index.html:274
+msgid "Телефон"
+msgstr "Phonenumber"
+
+#: .\main\templates\main\index.html:276
+msgid "Email"
+msgstr "Email"
+
+#: .\main\templates\main\index.html:278
+msgid "Мессенджер"
+msgstr "Messenger:"
+
+#: .\main\templates\main\index.html:293
+msgid "Замовити"
+msgstr "Order"
+
+#: .\main\templates\main\index.html:305
+msgid "УСІ КУРСИ ТА ЦІНИ"
+msgstr "ALL COURSES AND PRICES"
+
+#: .\main\templates\main\index.html:306
+msgid "УСІ"
+msgstr "ALL"
+
+#: .\main\templates\main\index.html:306
+msgid "КУРСИ"
+msgstr "COURSES"
+
+#: .\main\templates\main\index.html:306
+msgid "ТА"
+msgstr "AND"
+
+#: .\main\templates\main\index.html:306
+msgid "ЦІНИ"
+msgstr "PRICES"
+
+#: .\main\templates\main\index.html:310
+msgid "Проходження"
+msgstr "Passage"
+
+#: .\main\templates\main\index.html:314
+msgid "Люди, які працюють"
+msgstr "People who work"
+
+#: .\main\templates\main\index.html:318
+msgid "Студенти зараховані"
+msgstr "Students are enrolled"
+
+#: .\main\templates\main\index.html:322
+msgid "Роки досвіду"
+msgstr "Years of experience"
+
+#: .\main\templates\main\index.html:330
+msgid ""
+" Навчайтеся вдома, в офісі, на курорті з будь-якої точки світу. Онлайн курси "
+"від OWU влаштовані таким чином, щоб відтворити живе спілкування між "
+"викладачем і студентами."
+msgstr ""
+" Study at home, in the office, at the resort from anywhere in the world. "
+"Online courses from OWU are arranged in such a way as to recreate a living "
+"communication between teacher and students."
+
+#: .\main\templates\main\index.html:374
+msgid "СТАЦІОНАР"
+msgstr "IN OFFICE"
+
+#: .\main\templates\main\index.html:375
+msgid ""
+" Навчання в офісах нашої компанії з особистим спілкуванням з менторами та "
+"іншими студентами. Обговорюйте питання, діліться кодом, спілкуйтесь з "
+"однодумцями в живу. "
+msgstr ""
+"Training in the offices of our company with personal communication with "
+"mentors and other students. Discuss questions, share code, chat with like-"
+"minded people live."
+
+#: .\main\templates\main\index.html:421
+msgid "НАВЧАННЯ В SOFTLINE ЦЕ"
+msgstr "TRAINING IN SOFTLINE IS"
+
+#: .\main\templates\main\index.html:430
+msgid "Компактні групи до 15 осіб"
+msgstr "Compact groups of up to 15 people"
+
+#: .\main\templates\main\index.html:440
+msgid "Доступ до online відео курсів"
+msgstr "Access to online video courses"
+
+#: .\main\templates\main\index.html:449
+msgid "Допомога в працевлаштуванні студента"
+msgstr "Assistance in student employment"
+
+#: .\main\templates\main\index.html:458
+msgid "Великий вибір спеціальностей та окремих курсів"
+msgstr "A wide selection of specialties and individual courses"
+
+#: .\main\templates\main\index.html:467
+msgid "Усі викладачі - сертифіковані тренери Microsoft"
+msgstr "All teachers are certified Microsoft trainers"
+
+#: .\main\templates\main\index.html:476
+msgid "Сервіс online тестування"
+msgstr "Online testing service"
+
+#: .\main\templates\main\index.html:485
+msgid "Денне навчання в Києві"
+msgstr "Full-time study in Kyiv"
+
+#: .\main\templates\main\index.html:494
+msgid "Онлайн навчання в Zoom"
+msgstr "Online training in Zoom"
+
+#: .\main\templates\main\index.html:503
+msgid "Корпоративні тренінги"
+msgstr "Corporate trainings"
