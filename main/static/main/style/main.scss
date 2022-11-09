@@ -432,6 +432,7 @@ body{
                     left: 80px;
                     bottom: 45%;
                     z-index: 7;
+                    color: #FFF;
                 }
                 .nav_footer__telegram_icon{
                     position: absolute;
@@ -452,7 +453,8 @@ body{
         position: relative;
         justify-content: center;
         .slider-item{
-            
+            width: 100vw;
+            height: 100%;
         }
         .img_desc{
             position: absolute;
@@ -773,7 +775,9 @@ body{
                 font-size: 50px;
                 font-family: Poppins;
             }
-            
+            span{
+                color: #9D9D9E;
+            }
             .course-item-desc{
                 color: #AEAEAE;
                 font-size: 16px;

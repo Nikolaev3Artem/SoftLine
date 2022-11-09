@@ -1,36 +1,9 @@
-@media(max-width:1480px){
+@media(max-width:1441px){
     .main_content{
         .best_courses{
-            margin-top: 130px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            .best_courses__header_button{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                .best_courses__button{
-                    color: #fff;
-                    font-size: 16px;
-                    background-color: #2EC4B6;
-                    font-family: sans-serif;
-                    padding: 20px;
-                    border-radius: 50px;
-                    width: 300px;
-                    height: 50px;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    margin-bottom: 20px;
-                    .best_courses__button:hover{
-                        color: #fff;
-                        cursor: pointer;
-                    }
-                }
-            }
-            
+            margin-top: -20px;
+            flex-direction: column;
+
         }
         .specialty_courses{
             .courses_blocks{
@@ -41,48 +14,30 @@
                     display: flex;
                     flex-direction: row;
                 }
-                .courses__left_side , .courses__right_side{
-                    display: flex;
-                    position: relative;
-                    flex-direction: row;
-                }
                 .course__consultation{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    margin-top: 20px;
                 }
             }
         }
     }
 }
 
+@media(max-width:1024px){
+    
+}
+
+@media(max-width:768px){
+
+}
+
 @media(max-width:425px){
-    .main_content{
-        .best_courses__header{
-            display: flex;
-            justify-content: center;
-        }
-        .best_courses{
-            display: flex;
-            justify-content: center;
-            .courses_wrapper{
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-            }
-        }
-        .specialty_courses{
-            .courses_blocks{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .row_column{
-                    display: flex;
-                    flex-direction: column;
-                }
-            } 
-        }
 
+}
 
-    }
+@media(max-width:375px){
+
+}
+
+@media(max-width:320px){
+
 }
