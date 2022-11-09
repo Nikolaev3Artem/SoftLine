@@ -3,7 +3,8 @@
 {% load static %}
 {% block body %}
 {% load i18n %}
-<div class="header">
+
+<div class="header" id="header">
     <div class="header absolute">
         <div class="header__sticky_menu">
             <div class="sticky_menu__left_side">
@@ -125,7 +126,8 @@
                     <div class="sticky_menu__nav_footer">
                         <p class="nav_footer__logo">Logo</p>
                         <div class="nav_footer__contacts">
-                            <img class="menu__footer_bg" src="{% static "main/img/menu-footer-bg.jpg" %}" alt="">
+                            div.footer
+                            <img class="menu__footer_bg" src="{% static 'main/img/menu-footer-bg.jpg' %}" alt="">
 
                             <a href='#' class="nav_footer__phone_icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" fill="green" class="bi bi-telephone" viewBox="0 0 16 16">
@@ -149,7 +151,7 @@
         </div>
     </div>
     <div class="header__slider">
-        <img class='slider-item' src="{% static 'main/img/slider1.jpg' %}" alt="" srcset="">
+        <img class='slider-item' src="{% static 'main/img/slider1.jpg' %}" alt="not-recognised" srcset="">
             
         <p class="img_desc" >{% trans "Університет" %} <br> <span class="color2ec">{% trans "освіти" %}</span>{% trans "та" %} <span class="color2ec">{% trans "комп'ютерних технологій" %}</span></p>
     </div>
